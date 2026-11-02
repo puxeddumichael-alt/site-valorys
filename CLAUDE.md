@@ -2,6 +2,8 @@
 
 Ce dépôt est la **seule source** du site www.cabinet-valorys.com. Il est publié automatiquement sur l'hébergement OVH (cluster127, compte `cabingw`) à chaque modification poussée sur la branche `main`.
 
+Déploiement : Multisite OVH « Test nouveau site » → dossier racine `site-git`, associé à ce dépôt (HTTPS, branche `main`) ; webhook GitHub → OVH actif depuis le 2 novembre 2026. Le dépôt est public : n'y mettre aucun mot de passe ni donnée client.
+
 ## Règles impératives
 1. **Ne jamais modifier les fichiers directement sur le serveur** (FileZilla, éditeur OVH). Toute modification passe par ce dépôt, sinon elle sera écrasée au prochain déploiement.
 2. **Toujours partir de la dernière version** : `git pull` avant de commencer.
