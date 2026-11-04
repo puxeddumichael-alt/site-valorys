@@ -3,7 +3,7 @@
 Visuel repris à l'identique du site actuel (site.css = feuille de style d'origine).
 Les informations légales à compléter sont regroupées dans CONFIG.
 """
-import html, json, os, sys
+import hashlib, html, json, os, sys
 from datetime import date
 
 SRC = os.path.dirname(os.path.abspath(__file__))      # dossier _source
@@ -44,6 +44,11 @@ LOGO = "/public/Valorys_vectoriser.webp"
 URL = {p["path"]: "/" + p["path"] for p in PAGES}
 
 # ------------------------------------------------------------------ communs
+def ver(rel):
+    """Numéro de version d'un fichier (empreinte de son contenu) : force les navigateurs à recharger la nouvelle version."""
+    with open(os.path.join(ROOT, rel.lstrip("/")), "rb") as f:
+        return rel + "?v=" + hashlib.md5(f.read()).hexdigest()[:8]
+
 TRACKING = bool(CONFIG["gtm_id"] or CONFIG["ga_id"])
 CONSENT = ('<!-- Google Tag Manager + GA4 : chargés uniquement après consentement -->\n<script src="/public/js/consent.js" defer></script>' if TRACKING else "")
 
@@ -91,8 +96,8 @@ def head(title, desc, path, ld=None, noindex=False, preload_hero=False):
 {hero}<link rel="preload" as="font" type="font/woff2" href="/public/fonts/manrope-latin.woff2?v=101877a7" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/public/fonts/dm-serif-display-latin.woff2?v=436ae2f1" crossorigin>
 <style>{HEAD_STYLE}</style>
-<link rel="stylesheet" href="/public/css/site.css">
-<link rel="stylesheet" href="/public/css/extra.css">{lds}
+<link rel="stylesheet" href="{ver('/public/css/site.css')}">
+<link rel="stylesheet" href="{ver('/public/css/extra.css')}">{lds}
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-white">
 """
@@ -324,7 +329,7 @@ def footer():
 <a href="tel:+33669945608" class="v-fab fixed bottom-6 right-6 z-50 bg-secondary text-white w-14 h-14 rounded-[30px] shadow-lg shadow-secondary/40 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-200" aria-label="Appeler Valorys">
     <span class="material-symbols-outlined text-2xl" aria-hidden="true">call</span>
 </a>
-<script src="/public/js/site.js"></script>
+<script src="{ver('/public/js/site.js')}"></script>
 </body>
 </html>
 """
