@@ -1,6 +1,6 @@
 RewriteEngine On
-# cabinet-valorys.com -> www.cabinet-valorys.com
-RewriteCond %{HTTP_HOST} ^cabinet-valorys\.com$ [NC]
+# cabinet-valorys.com et l'ancienne adresse de test nouveau.cabinet-valorys.com -> www.cabinet-valorys.com
+RewriteCond %{HTTP_HOST} ^(nouveau\.)?cabinet-valorys\.com$ [NC]
 RewriteRule ^(.*)$ https://www.cabinet-valorys.com/$1 [L,R=301]
 # Forcer HTTPS (sur l'adresse en cours : permet aussi de tester sur un sous-domaine)
 RewriteCond %{HTTPS} off
