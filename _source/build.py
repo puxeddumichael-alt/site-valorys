@@ -811,10 +811,11 @@ def emprunteur():
 <section class="py-24 bg-surface-container-low" id="profils">
     <div class="container mx-auto px-8">
         <div class="v-head-row reveal">
-            <div><h2 class="v-section-title">Les dossiers que nous maîtrisons</h2><div class="v-bar"></div></div>
-            <p class="v-lead-light">Les situations qui posent problème aux banques et aux plateformes en ligne sont précisément celles où l'accompagnement d'un courtier fait la différence.</p>
+            <div><h2 class="v-section-title">Tous les dossiers, du plus simple au plus complexe</h2><div class="v-bar"></div></div>
+            <p class="v-lead-light">Achat de votre résidence principale ou situation plus délicate : chaque dossier bénéficie de la même analyse et du même suivi, jusqu'à l'accord de la banque.</p>
         </div>
         <div class="v-trust v-trust3 reveal">
+            <div class="v-trust-wide"><span class="material-symbols-outlined" aria-hidden="true">home</span><div><h3>Résidence principale et premier achat</h3><p>Salariés, couples, primo-accédants : c'est le cœur de notre activité. Nous trouvons rapidement le contrat le plus juste, réglons la quotité entre co-emprunteurs et vous remettons une attestation conforme aux exigences de votre banque, dans les délais de votre offre de prêt.</p></div></div>
             <div><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span><h3>Risques aggravés de santé</h3><p>Antécédents médicaux, maladie chronique, surprime ou exclusion proposée : nous connaissons les assureurs qui acceptent ces profils et appliquons la convention AERAS et le droit à l'oubli.</p></div>
             <div><span class="material-symbols-outlined" aria-hidden="true">account_balance</span><h3>Agents publics</h3><p>Fonctionnaires et agents des collectivités : le maintien de traitement change la façon de choisir la garantie incapacité. Nous vous évitons de payer pour une couverture qui ne vous versera rien.</p></div>
             <div><span class="material-symbols-outlined" aria-hidden="true">stethoscope</span><h3>Professions libérales et médicales</h3><p>Médecins, kinés, infirmiers, avocats, indépendants : incapacité appréciée dans votre profession, franchises adaptées, garanties cohérentes avec votre prévoyance.</p></div>
