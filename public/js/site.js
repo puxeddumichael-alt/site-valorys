@@ -161,10 +161,14 @@
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
             feedback.classList.add('hidden');
-            const name = document.getElementById('cf-name').value.trim();
+            const first = document.getElementById('cf-name').value.trim();
+            const last = document.getElementById('cf-lastname').value.trim();
+            const name = (first + ' ' + last).trim();
             const email = document.getElementById('cf-email').value.trim();
-            if (!name || !email) { showFeedback(false, 'Merci de renseigner votre nom et votre adresse email.'); return; }
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showFeedback(false, 'Merci de vérifier votre adresse email.'); return; }
+            if (!first) { showFeedback(false, 'Merci d\'indiquer votre prénom.'); return; }
+            if (!last) { showFeedback(false, 'Merci d\'indiquer votre nom.'); return; }
+            if (!email) { showFeedback(false, 'Merci de renseigner votre adresse e-mail.'); return; }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showFeedback(false, 'Merci de vérifier votre adresse e-mail.'); return; }
             if (!document.getElementById('cf-consent').checked) { showFeedback(false, 'Merci de cocher la case de consentement pour que nous puissions vous recontacter.'); return; }
             setLoading(true);
             try {

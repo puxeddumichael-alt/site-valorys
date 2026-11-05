@@ -444,17 +444,23 @@
                 <form id="contact-form" class="space-y-8" novalidate role="tabpanel" aria-labelledby="tab-message" data-panel="message" hidden>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="relative group">
-                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom et prénom <span class="text-secondary">*</span></label>
-                            <input id="cf-name" name="name" required minlength="2" maxlength="100" autocomplete="name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Nom Prénom" type="text">
+                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Prénom <span class="text-secondary">*</span></label>
+                            <input id="cf-name" name="firstname" required maxlength="60" autocomplete="given-name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Votre prénom" type="text">
                         </div>
                         <div class="relative group">
-                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse e-mail <span class="text-secondary">*</span></label>
-                            <input id="cf-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="contact@entreprise.fr" type="email">
+                            <label for="cf-lastname" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom <span class="text-secondary">*</span></label>
+                            <input id="cf-lastname" name="lastname" required maxlength="60" autocomplete="family-name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Votre nom" type="text">
                         </div>
                     </div>
-                    <div class="relative group">
-                        <label for="cf-phone" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Téléphone</label>
-                        <input id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="+33 6 00 00 00 00" type="tel">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="relative group">
+                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse e-mail <span class="text-secondary">*</span></label>
+                            <input id="cf-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="votre@email.fr" type="email">
+                        </div>
+                        <div class="relative group">
+                            <label for="cf-phone" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Téléphone</label>
+                            <input id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="06 00 00 00 00" type="tel">
+                        </div>
                     </div>
                     <div class="relative group">
                         <label for="cf-type" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Type de demande</label>
@@ -512,6 +518,6 @@
 <a href="tel:+33669945608" class="v-fab fixed bottom-6 right-6 z-50 bg-secondary text-white w-14 h-14 rounded-[30px] shadow-lg shadow-secondary/40 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-200" aria-label="Appeler Valorys">
     <span class="material-symbols-outlined text-2xl" aria-hidden="true">call</span>
 </a>
-<script src="/public/js/site.js?v=234374ab"></script>
+<script src="/public/js/site.js?v=8eef6df3"></script>
 </body>
 </html>

@@ -268,17 +268,23 @@ def contact(selected=""):
                 <form id="contact-form" class="space-y-8" novalidate role="tabpanel" aria-labelledby="tab-message" data-panel="message" hidden>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="relative group">
-                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom et prénom <span class="text-secondary">*</span></label>
-                            <input id="cf-name" name="name" required minlength="2" maxlength="100" autocomplete="name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Nom Prénom" type="text">
+                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Prénom <span class="text-secondary">*</span></label>
+                            <input id="cf-name" name="firstname" required maxlength="60" autocomplete="given-name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Votre prénom" type="text">
                         </div>
                         <div class="relative group">
-                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse e-mail <span class="text-secondary">*</span></label>
-                            <input id="cf-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="contact@entreprise.fr" type="email">
+                            <label for="cf-lastname" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom <span class="text-secondary">*</span></label>
+                            <input id="cf-lastname" name="lastname" required maxlength="60" autocomplete="family-name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Votre nom" type="text">
                         </div>
                     </div>
-                    <div class="relative group">
-                        <label for="cf-phone" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Téléphone</label>
-                        <input id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="+33 6 00 00 00 00" type="tel">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="relative group">
+                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse e-mail <span class="text-secondary">*</span></label>
+                            <input id="cf-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="votre@email.fr" type="email">
+                        </div>
+                        <div class="relative group">
+                            <label for="cf-phone" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Téléphone</label>
+                            <input id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="06 00 00 00 00" type="tel">
+                        </div>
                     </div>
                     <div class="relative group">
                         <label for="cf-type" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Type de demande</label>
