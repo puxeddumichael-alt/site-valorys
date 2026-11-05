@@ -427,7 +427,7 @@ def index():
                 <img alt="" role="presentation" width="512" height="512" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="/public/conseil-entreprise.webp">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-10">
-                    <span class="material-symbols-outlined text-secondary text-5xl mb-4" aria-hidden="true">domain</span>
+                    <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
                     <h3 class="font-headline font-extrabold text-4xl text-white mb-4">Protéger votre Entreprise</h3>
                     <p class="text-slate-300 max-w-md font-medium">Responsabilité Civile Professionnelle, Multirisque, Décennale et Protection du dirigeant : des solutions sur mesure pour sécuriser les professions libérales, artisans, commerçants et entreprises de la région toulousaine.</p>
                     {more()}
@@ -448,7 +448,7 @@ def index():
 
             <a href="{URL['prevoyance-sante.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-primary rounded-xl reveal stagger-3">
                 <div class="p-10 relative z-10">
-                    <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">health_and_safety</span>
+                    <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span>
                     <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Prévoyance &amp; Santé</h3>
                     <p class="text-slate-400">Des solutions sur mesure en mutuelle et prévoyance individuelle et collective pour vous protéger, vous et vos proches, à chaque étape de votre vie.</p>
                     {more()}
@@ -481,7 +481,7 @@ def index():
             <a href="/assurance-emprunteur.html" class="v-card-link v-emp-card group relative overflow-hidden bg-primary rounded-xl border-l-8 border-secondary reveal">
                 <div class="v-emp-inner relative z-10">
                     <div class="v-emp-text">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">real_estate_agent</span>
+                        <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">real_estate_agent</span></span>
                         <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Assurance emprunteur</h3>
                         <p class="text-slate-300">Nouveau crédit ou prêt en cours : depuis la loi Lemoine, vous pouvez changer d'assurance de prêt à tout moment, sans frais. Nous comparons les contrats à garanties équivalentes et gérons toutes les démarches avec votre banque.</p>
                         {more()}
@@ -818,7 +818,7 @@ def emprunteur():
             <p class="v-lead-light">Achat de votre résidence principale ou situation plus délicate : chaque dossier bénéficie de la même analyse et du même suivi, jusqu'à l'accord de la banque.</p>
         </div>
         <div class="v-trust v-trust3 reveal">
-            <div class="v-trust-wide"><span class="material-symbols-outlined" aria-hidden="true">home</span><div><h3>Résidence principale et premier achat</h3><p>Salariés, couples, primo-accédants : c'est le cœur de notre activité. Nous trouvons rapidement le contrat le plus juste, réglons la quotité entre co-emprunteurs et vous remettons une attestation conforme aux exigences de votre banque, dans les délais de votre offre de prêt.</p></div><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">home</span></div></div>
+            <div class="v-trust-wide"><span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">home</span></span><div><h3>Résidence principale et premier achat</h3><p>Salariés, couples, primo-accédants : c'est le cœur de notre activité. Nous trouvons rapidement le contrat le plus juste, réglons la quotité entre co-emprunteurs et vous remettons une attestation conforme aux exigences de votre banque, dans les délais de votre offre de prêt.</p></div><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">home</span></div></div>
             <div class="v-tcard"><span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span><h3>Risques aggravés de santé</h3><p>Antécédents médicaux, maladie chronique, surprime ou exclusion proposée : nous connaissons les assureurs qui acceptent ces profils et appliquons la convention AERAS et le droit à l'oubli.</p><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">health_and_safety</span></div></div>
             <div class="v-tcard"><span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span><h3>Agents publics</h3><p>Fonctionnaires et agents des collectivités : le maintien de traitement change la façon de choisir la garantie incapacité. Nous vous évitons de payer pour une couverture qui ne vous versera rien.</p><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">account_balance</span></div></div>
             <div class="v-tcard"><span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">stethoscope</span></span><h3>Professions libérales et médicales</h3><p>Médecins, kinés, infirmiers, avocats, indépendants : incapacité appréciée dans votre profession, franchises adaptées, garanties cohérentes avec votre prévoyance.</p><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">stethoscope</span></div></div>
