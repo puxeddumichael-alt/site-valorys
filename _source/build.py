@@ -105,11 +105,11 @@ def head(title, desc, path, ld=None, noindex=False, preload_hero=False):
 NAV_SVC = [(q["path"], q["name"]) for q in PAGES] + [("assurance-emprunteur.html", "Assurance emprunteur")]
 # Menu « Notre expertise » : mêmes titres et mêmes contrats que les cartes de l'accueil
 NAV_CARTES = {
-    "protection-entreprise.html": ("Pérenniser votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
+    "protection-entreprise.html": ("Sécuriser votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
     "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
     "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Santé · Individuelle &amp; collective"),
     "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER · Capitalisation"),
-    "bilan-retraite.html": ("Sécuriser votre avenir", "Bilan retraite · Audit patrimonial"),
+    "bilan-retraite.html": ("Anticiper votre avenir", "Bilan retraite · Audit patrimonial"),
     "assurance-emprunteur.html": ("Assurer votre prêt immobilier", "Assurance emprunteur · Loi Lemoine"),
 }
 def nav_item(path, extra=""):
@@ -441,7 +441,7 @@ def index():
                 <div class="absolute bottom-0 left-0 p-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
                     <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale · Protection juridique</span>
-                    <h3 class="font-headline font-extrabold text-3xl text-white mb-4">Pérenniser votre entreprise</h3>
+                    <h3 class="font-headline font-extrabold text-3xl text-white mb-4">Sécuriser votre entreprise</h3>
                     <p class="text-slate-300 max-w-md font-medium">Un sinistre, un litige client ou votre absence ne doivent pas mettre votre activité en péril. Nous adaptons chaque garantie à votre métier : professions libérales, artisans, commerçants et entreprises.</p>
                     {more()}
                 </div>
@@ -488,8 +488,8 @@ def index():
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
                     <span class="v-card-tag">Bilan retraite · Audit patrimonial</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Sécuriser votre avenir</h3>
-                    <p class="text-on-surface-variant">Anticiper votre retraite, préparer vos futurs revenus et développer votre patrimoine, à partir d'un bilan complet et d'une stratégie sur mesure.</p>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Anticiper votre avenir</h3>
+                    <p class="text-on-surface-variant">Préparer votre retraite et vos revenus futurs, développer votre patrimoine à partir d'un bilan complet et d'une stratégie sur mesure.</p>
                     {more()}
                 </div>
                 <div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">account_balance</span></div>
