@@ -309,7 +309,7 @@ def contact(selected=""):
 """
 
 def footer():
-    svc = "".join(f'<a href="/{p["path"]}">{html.escape(p["name"])}</a>' for p in PAGES) + '<a href="/assurance-emprunteur.html">Assurance emprunteur</a>'
+    svc = "".join(f'<a href="/{x[0]}">{NAV_CARTES[x[0]][0]}</a>' for x in NAV_SVC)
     foot_link = "text-slate-400 font-body text-sm uppercase tracking-widest hover:text-secondary underline decoration-2 underline-offset-4 transition-all opacity-80 hover:opacity-100"
     return f"""
 <!-- ===== FOOTER ===== -->
