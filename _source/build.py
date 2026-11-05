@@ -107,7 +107,7 @@ NAV_SVC = [(q["path"], q["name"]) for q in PAGES] + [("assurance-emprunteur.html
 NAV_CARTES = {
     "protection-entreprise.html": ("Préserver votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
     "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
-    "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Mutuelle santé · Contrats collectifs"),
+    "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Mutuelle santé · Collectifs"),
     "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER"),
     "bilan-retraite.html": ("Sécuriser votre avenir", "Bilan retraite · Audit patrimonial"),
     "assurance-emprunteur.html": ("Assurer votre prêt immobilier", "Assurance emprunteur · Loi Lemoine"),
@@ -463,7 +463,7 @@ def index():
             <a href="{URL['prevoyance-sante.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-primary rounded-xl reveal stagger-3">
                 <div class="p-10 relative z-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span>
-                    <span class="v-card-tag v-card-tag-dark">Prévoyance · Mutuelle santé · Contrats collectifs</span>
+                    <span class="v-card-tag v-card-tag-dark">Prévoyance · Mutuelle santé · Collectifs</span>
                     <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Protéger votre famille</h3>
                     <p class="text-slate-400">Maintenir votre niveau de vie face aux aléas, assurer l'avenir de vos proches et bénéficier d'une couverture santé adaptée, pour votre famille comme pour vos salariés.</p>
                     {more()}
