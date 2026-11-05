@@ -520,3 +520,8 @@ for _p in PAGES:
     _x = _EXPERT.get(_p['path'], {})
     _p['faqs'] = list(_p['faqs']) + _x.pop('faq_more', [])
     _p.update(_x)
+
+# Ordre d'affichage (menu, pied de page) : le même que les cartes de l'accueil.
+_ORDRE = ['protection-entreprise.html', 'epargne-entreprise.html', 'prevoyance-sante.html',
+          'epargne-retraite.html', 'bilan-retraite.html']
+PAGES.sort(key=lambda _p: _ORDRE.index(_p['path']))
