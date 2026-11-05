@@ -446,8 +446,8 @@ def index():
                 <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
-                    <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale · Protection juridique</span>
-                    <h3 class="font-headline font-extrabold text-3xl text-white mb-4">Sécuriser votre entreprise</h3>
+                    <span class="v-card-tag v-card-tag-dark">{NAV_CARTES["protection-entreprise.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-3xl text-white mb-4">{NAV_CARTES["protection-entreprise.html"][0]}</h3>
                     <p class="text-slate-300 max-w-md font-medium">Un sinistre, un litige client ou votre absence ne doivent pas mettre votre activité en péril. Nous adaptons chaque garantie à votre métier : professions libérales, artisans, commerçants et entreprises.</p>
                     {more()}
                 </div>
@@ -457,8 +457,8 @@ def index():
                 <div class="p-10 flex flex-col h-full justify-between">
                     <div>
                         <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">group</span></span>
-                        <span class="v-card-tag">PEE · PEI · PERECO · IFC</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Fidéliser vos salariés</h3>
+                        <span class="v-card-tag">{NAV_CARTES["epargne-entreprise.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">{NAV_CARTES["epargne-entreprise.html"][0]}</h3>
                         <p class="text-on-surface-variant">Partager la valeur créée, attirer et fidéliser vos collaborateurs, anticiper le coût des départs à la retraite : dans un cadre social et fiscal avantageux pour l'entreprise comme pour les salariés.</p>
                         {more()}
                     </div>
@@ -469,8 +469,8 @@ def index():
             <a href="{URL['prevoyance-sante.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-primary rounded-xl reveal stagger-3">
                 <div class="p-10 relative z-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span>
-                    <span class="v-card-tag v-card-tag-dark">Prévoyance · Santé · Individuelle &amp; collective</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4">Protéger votre famille</h3>
+                    <span class="v-card-tag v-card-tag-dark">{NAV_CARTES["prevoyance-sante.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4">{NAV_CARTES["prevoyance-sante.html"][0]}</h3>
                     <p class="text-slate-400">Maintenir votre niveau de vie face aux aléas, assurer l'avenir de vos proches et bénéficier d'une couverture santé adaptée, pour votre famille comme pour vos salariés.</p>
                     {more()}
                 </div>
@@ -482,8 +482,8 @@ def index():
             <a href="{URL['epargne-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">savings</span></span>
-                    <span class="v-card-tag">Assurance vie · PER · Capitalisation</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Valoriser votre épargne</h3>
+                    <span class="v-card-tag">{NAV_CARTES["epargne-retraite.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">{NAV_CARTES["epargne-retraite.html"][0]}</h3>
                     <p class="text-on-surface-variant">Faire travailler votre épargne, alléger votre fiscalité et transmettre à vos proches dans les meilleures conditions.</p>
                     {more()}
                 </div>
@@ -493,8 +493,8 @@ def index():
             <a href="{URL['bilan-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
-                    <span class="v-card-tag">Bilan retraite · Audit patrimonial</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">Préparer votre avenir</h3>
+                    <span class="v-card-tag">{NAV_CARTES["bilan-retraite.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4">{NAV_CARTES["bilan-retraite.html"][0]}</h3>
                     <p class="text-on-surface-variant">Anticiper votre retraite et vos revenus futurs, développer votre patrimoine à partir d'un bilan complet et d'une stratégie sur mesure.</p>
                     {more()}
                 </div>
@@ -505,8 +505,8 @@ def index():
                 <div class="v-emp-inner relative z-10">
                     <div class="v-emp-text">
                         <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">real_estate_agent</span></span>
-                        <span class="v-card-tag v-card-tag-dark">Assurance emprunteur · Loi Lemoine</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4">Assurer votre prêt immobilier</h3>
+                        <span class="v-card-tag v-card-tag-dark">{NAV_CARTES["assurance-emprunteur.html"][1]}</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4">{NAV_CARTES["assurance-emprunteur.html"][0]}</h3>
                         <p class="text-slate-300">Nouveau crédit ou prêt en cours : vous pouvez changer d'assurance à tout moment, sans frais. Nous comparons les garanties à niveau équivalent et gérons toutes les démarches avec votre banque, jusqu'à son accord.</p>
                         {more()}
                     </div>
