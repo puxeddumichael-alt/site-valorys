@@ -8,8 +8,8 @@ PAGES = [{'path': 'prevoyance-sante.html',
           "collectifs d'entreprise à Toulouse. Comparaison de plus de 60 assureurs.",
   'h1': 'Prévoyance et santé : protéger vos revenus et vos proches',
   'lead': 'Un arrêt de travail ou une invalidité peut faire chuter vos revenus du jour au lendemain, surtout '
-          'si vous êtes indépendant. Nous vérifions ce que vous couvre déjà le régime obligatoire, puis nous '
-          'complétons là où il le faut.',
+          'si vous êtes indépendant. Nous partons de ce que vous couvrent déjà votre régime obligatoire et '
+          'votre convention collective, puis nous complétons au juste niveau, garantie par garantie.',
   'prose': '<h2>La prévoyance, pour quoi faire</h2>\n'
            '<p>La prévoyance prend le relais quand vous ne pouvez plus travailler, ou protège votre famille '
            'si vous disparaissez. Elle se compose généralement de trois briques :</p>\n'
@@ -47,11 +47,67 @@ PAGES = [{'path': 'prevoyance-sante.html',
             'proposer quoi que ce soit.'),
            ("Peut-on changer de mutuelle en cours d'année ?",
             'Oui, après un an de contrat, une mutuelle individuelle peut être résiliée à tout moment. Nous '
-            'pouvons nous occuper des démarches pour vous.')],
+            'pouvons nous occuper des démarches pour vous.'),
+           ("Qu'est-ce qu'un contrat « Madelin » ?",
+            "C'est un contrat de prévoyance ou de santé réservé aux travailleurs non salariés, dont les "
+            'cotisations sont déductibles du bénéfice imposable, dans certaines limites et à condition '
+            "d'être à jour de vos cotisations obligatoires. Nous vérifions que le montant assuré reste dans "
+            'les plafonds de déduction.'),
+           ("Je suis agent public : quelle prévoyance choisir ?",
+            "Le maintien de traitement protège surtout les premiers mois d'arrêt : au-delà, le passage à "
+            "demi-traitement peut fortement réduire vos revenus. Les employeurs publics participent désormais "
+            'au financement de la protection sociale complémentaire de leurs agents. Nous comparons le '
+            "contrat proposé par votre employeur avec une couverture individuelle, et nous accompagnons aussi "
+            'les collectivités dans leurs démarches.')],
+  'checks_title': 'Le prix compte.<br><span class="text-secondary">Les garanties aussi.</span>',
+  'checks_lead': "Deux contrats de prévoyance au même tarif peuvent verser des montants très différents le "
+                 "jour d'un arrêt de travail. Nous lisons les conditions générales à votre place et vous "
+                 'montrons les écarts, ligne par ligne.',
+  'checks': [('Votre régime obligatoire', 'SSI, CARMF, CARPIMKO, CIPAV, régime général ou statut public : ce '
+              'que vous percevez déjà, et à partir de quel jour.'),
+             ('Les indemnités journalières', 'franchise, durée de versement et montant cohérent avec vos '
+              'revenus réels.'),
+             ("L'invalidité", "barème professionnel ou fonctionnel, taux à partir duquel la rente est versée, "
+              'invalidité partielle ou totale.'),
+             ('Les exclusions', "pathologies du dos et troubles psychiques, souvent limités sans "
+              'hospitalisation, et leur éventuel rachat.'),
+             ('Le mode de calcul', "forfaitaire ou indemnitaire : ce qui change tout le jour où l'assureur "
+              'compare vos revenus avant et après.'),
+             ('Vos frais professionnels', "loyer, salaires, crédits : une garantie dédiée pour que votre "
+              'activité tienne pendant votre arrêt.'),
+             ('Vos proches', 'capital décès, rente éducation et rente de conjoint, dimensionnés selon votre '
+              'famille et vos emprunts.'),
+             ('La fiscalité', "cadre Madelin pour les indépendants, contrats collectifs pour les salariés : "
+              'des cotisations optimisées en toute conformité.')],
+  'profils_title': 'Toutes les situations, du salarié au dirigeant',
+  'profils_lead': 'Mutuelle familiale ou prévoyance de dirigeant : chaque situation bénéficie de la même '
+                  'analyse, de la comparaison des contrats au suivi de vos garanties dans la durée.',
+  'profil_wide': ('family_restroom', 'Salariés et familles',
+                  "Mutuelle santé adaptée aux habitudes de chacun, complément à la prévoyance d'entreprise, "
+                  "protection du conjoint et des enfants : c'est le quotidien de notre activité. Nous "
+                  'comparons les remboursements poste par poste et nous nous occupons du changement de contrat.'),
+  'profils': [('storefront', 'Indépendants, artisans, commerçants',
+               "Des droits obligatoires faibles et tardifs : nous calculons votre vrai besoin à partir de vos "
+               'charges personnelles et professionnelles.'),
+              ('stethoscope', 'Professions libérales et médicales',
+               "Médecins, kinés, infirmiers, avocats : longues carences de vos caisses, invalidité appréciée "
+               'dans votre profession, garanties frais professionnels.'),
+              ('account_balance', 'Agents publics et collectivités',
+               'Maintien de traitement, demi-traitement, participation employeur : nous comparons les '
+               'offres et accompagnons les collectivités.'),
+              ('work', 'Dirigeants de société',
+               "Gérant majoritaire ou président assimilé salarié : une couverture alignée sur votre statut et "
+               "sur la rémunération que vous vous versez."),
+              ('groups', 'Entreprises et salariés',
+               "Mutuelle obligatoire et prévoyance collective conformes à votre convention collective, y "
+               'compris pour vos cadres.'),
+              ('health_and_safety', 'Antécédents de santé',
+               'Antécédents médicaux ou métier exposé : nous connaissons les assureurs qui acceptent ces '
+               'profils, avec le moins de restrictions possible.')],
   'besoin': 'Prévoyance individuelle',
   'aside_title': 'Vérifier votre couverture',
-  'aside_text': 'Apportez vos contrats actuels : nous vous disons en un rendez-vous ce qui vous protège '
-                'vraiment, et ce qui manque.'},
+  'aside_text': 'Apportez vos contrats actuels : en un rendez-vous, nous vous disons ce qui vous protège '
+                'vraiment, ce qui manque, et ce que vous payez en trop.'},
  {'path': 'protection-entreprise.html',
   'name': 'Protéger votre entreprise',
   'title': 'Assurance professionnelle à Toulouse : RC Pro, multirisque, décennale | Cabinet Valorys',

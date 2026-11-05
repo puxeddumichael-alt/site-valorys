@@ -615,6 +615,7 @@ def service(p):
         </aside>
     </div>
 </section>
+{expert_blocks(p)}
 <section class="v-faq">
     <div class="container mx-auto px-8">
         <h2 class="reveal">Questions fréquentes</h2>
@@ -622,6 +623,41 @@ def service(p):
     </div>
 </section>
 """ + contact(p["besoin"]) + footer()
+
+def expert_blocks(p):
+    """Blocs d'expertise optionnels d'une page service (même présentation que la page assurance emprunteur)."""
+    out = ""
+    if p.get("checks"):
+        items = "".join(f'<li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>{t}</strong> : {d}</span></li>' for t, d in p["checks"])
+        out += f"""
+<section class="py-32 bg-primary relative overflow-hidden" id="analyse">
+    <div class="container mx-auto px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal-left">
+                <h2 class="font-headline font-black text-3xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight tracking-tighter">{p["checks_title"]}</h2>
+                <p class="v-lead-dark">{p["checks_lead"]}</p>
+            </div>
+            <ul class="v-checks reveal-right">{items}</ul>
+        </div>
+    </div>
+</section>"""
+    if p.get("profils"):
+        wi, wt, wd = p["profil_wide"]
+        cards = "".join(f'<div class="v-tcard"><span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">{i}</span></span><h3>{t}</h3><p>{d}</p><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">{i}</span></div></div>' for i, t, d in p["profils"])
+        out += f"""
+<section class="py-24 bg-surface-container-low" id="profils">
+    <div class="container mx-auto px-8">
+        <div class="v-head-row reveal">
+            <div><h2 class="v-section-title">{p["profils_title"]}</h2><div class="v-bar"></div></div>
+            <p class="v-lead-light">{p["profils_lead"]}</p>
+        </div>
+        <div class="v-trust v-trust3 reveal">
+            <div class="v-trust-wide"><span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">{wi}</span></span><div><h3>{wt}</h3><p>{wd}</p></div><div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">{wi}</span></div></div>
+            {cards}
+        </div>
+    </div>
+</section>"""
+    return out
 
 COOKIES_TXT = ("""<p>Avec votre accord uniquement, ce site utilise des cookies de mesure d'audience (Google Analytics, via Google Tag Manager). Aucun de ces cookies n'est déposé tant que vous n'avez pas cliqué sur « Accepter ». Votre choix est conservé 6 mois ; les cookies de mesure ont une durée de vie maximale de 13 mois.</p>
 <p><a href="#" data-cookie-settings>Modifier mes préférences cookies</a></p>""" if TRACKING else
