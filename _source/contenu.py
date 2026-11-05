@@ -210,10 +210,25 @@ PAGES = [{'path': 'prevoyance-sante.html',
            'tout ou partie de ses salariés, selon des catégories objectives. Il peut aussi servir à la '
            'retraite du dirigeant. Nous vous aidons à définir les bénéficiaires, le niveau de cotisation et '
            'les formalités de mise en place.</p>\n'
-           '<h2>Intéressement et épargne salariale</h2>\n'
-           "<p>Pour les dispositifs d'épargne salariale (plan d'épargne entreprise, PER collectif, "
-           'intéressement), nous vous orientons et travaillons avec les partenaires spécialisés afin de vous '
-           'proposer une solution cohérente avec votre politique de rémunération.</p>',
+           '<h2>Épargne salariale</h2>\n'
+           "<p>L'épargne salariale permet de redistribuer une partie de la valeur créée par l'entreprise "
+           "à ses salariés, dans un cadre social et fiscal avantageux pour les deux parties. Nous vous aidons "
+           "à construire un ensemble cohérent avec votre politique de rémunération :</p>\n"
+           '<ul>\n'
+           "<li><strong>Le plan d'épargne entreprise (PEE)</strong>, ou <strong>interentreprises (PEI)</strong> "
+           "pour les TPE et PME qui souhaitent mutualiser la mise en place : une épargne à moyen terme, "
+           "disponible après cinq ans ou en cas de déblocage anticipé.</li>\n"
+           "<li><strong>Le PER collectif (PERECO)</strong>, pour une épargne retraite accessible à tous les "
+           "salariés.</li>\n"
+           "<li><strong>L'intéressement et la participation</strong>, qui associent les salariés aux "
+           "résultats de l'entreprise.</li>\n"
+           "<li><strong>L'abondement de l'employeur</strong>, qui complète les versements des salariés et "
+           "renforce l'attractivité de vos plans.</li>\n"
+           '</ul>\n'
+           "<p>Dans les entreprises de 1 à 250 salariés, le dirigeant et son conjoint collaborateur ou "
+           "associé peuvent, sous conditions, en bénéficier eux aussi. Pour la gestion financière des plans, "
+           "nous travaillons avec des partenaires spécialisés, et nous restons votre interlocuteur pour la "
+           "mise en place et le suivi.</p>",
   'faqs': [('Mon entreprise est-elle concernée par les IFC ?',
             "Toute entreprise qui emploie des salariés est concernée : l'indemnité est due au départ en "
             "retraite. La question est de savoir si vous préférez la financer d'un coup, ou l'anticiper."),
@@ -413,8 +428,8 @@ _EXPERT = {
   'profils_lead': "Quelques salariés ou une équipe structurée : chaque entreprise bénéficie du même chiffrage "
                   "et d'un suivi d'une année sur l'autre.",
   'profil_wide': ('apartment', 'TPE et PME de la région',
-                  "Anticiper les indemnités de départ et offrir un complément de retraite à vos "
-                  "salariés : c'est le quotidien de notre activité. Nous chiffrons, nous mettons en place "
+                  "Anticiper les indemnités de départ, mettre en place l'épargne salariale et offrir un "
+                  "complément de retraite à vos salariés : c'est le quotidien de notre activité. Nous chiffrons, nous mettons en place "
                   "et nous suivons les contrats avec vous et votre expert-comptable."),
   'profils': [('elderly', 'Équipe expérimentée',
                "Plusieurs départs à prévoir dans les prochaines années : nous lissons leur coût pour "
@@ -428,13 +443,23 @@ _EXPERT = {
               ('handshake', 'Cession et transmission',
                "Mesurer et provisionner le passif social avant de céder ou de transmettre votre "
                "entreprise."),
-              ('menu_book', 'Conventions collectives',
-               "Indemnités conventionnelles parfois bien supérieures au minimum légal : nous les "
-               "intégrons au calcul."),
+              ('payments', 'Épargne salariale',
+               "PEE, PEI, PERECO, intéressement, participation et abondement : un dispositif cohérent "
+               "pour partager la valeur et fidéliser vos équipes."),
               ('calculate', 'Avec votre expert-comptable',
                "Chiffres, provisions et écritures préparés avec lui, pour une mise en place sans "
                "friction.")],
-  'faq_more': [("Pourquoi externaliser les IFC auprès d'un assureur ?",
+  'faq_more': [("PEE, PEI, PERECO : quelles différences ?",
+                "Le PEE est mis en place par une seule entreprise ; le PEI est commun à plusieurs "
+                "entreprises, ce qui simplifie la démarche pour une TPE ou une PME. Tous deux constituent "
+                "une épargne disponible après cinq ans, sauf cas de déblocage anticipé. Le PERECO est "
+                "dédié à la retraite : l'épargne reste en principe bloquée jusqu'au départ, avec des cas "
+                "de sortie anticipée comme l'achat de la résidence principale."),
+               ("Le dirigeant peut-il profiter de l'épargne salariale ?",
+                "Oui, dans les entreprises de 1 à 250 salariés : le chef d'entreprise, son conjoint "
+                "collaborateur ou associé, et certains mandataires sociaux peuvent adhérer aux plans, y "
+                "compris à l'abondement, sous conditions."),
+               ("Pourquoi externaliser les IFC auprès d'un assureur ?",
                 "Pour étaler la dépense dans le temps au lieu de la subir au moment du départ, "
                 "bénéficier de la déductibilité des cotisations et disposer d'un fonds dédié qui verse "
                 "l'indemnité le moment venu.")],
