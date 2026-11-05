@@ -108,7 +108,7 @@ NAV_CARTES = {
     "protection-entreprise.html": ("Préserver votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
     "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
     "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Santé · Individuelle &amp; collective"),
-    "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER"),
+    "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER · Capitalisation"),
     "bilan-retraite.html": ("Sécuriser votre avenir", "Bilan retraite · Audit patrimonial"),
     "assurance-emprunteur.html": ("Assurer votre prêt immobilier", "Assurance emprunteur · Loi Lemoine"),
 }
@@ -476,7 +476,7 @@ def index():
             <a href="{URL['epargne-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">savings</span></span>
-                    <span class="v-card-tag">Assurance vie · PER</span>
+                    <span class="v-card-tag">Assurance vie · PER · Capitalisation</span>
                     <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Valoriser votre épargne</h3>
                     <p class="text-on-surface-variant">Faire travailler votre épargne, alléger votre fiscalité et transmettre à vos proches dans les meilleures conditions.</p>
                     {more()}
