@@ -506,7 +506,7 @@ def index():
                     </div>
                     <ul class="v-emp-points">
                         <li><strong>À tout moment</strong><span>dès la signature ou en cours de prêt</span></li>
-                        <li><strong>Mêmes garanties</strong><span>équivalent à celui exigé par votre banque</span></li>
+                        <li><strong>Mêmes garanties</strong><span>équivalentes à celles exigées par votre banque</span></li>
                         <li><strong>Sans frais</strong><span>étude et démarches offertes</span></li>
                     </ul>
                 </div>
