@@ -109,7 +109,7 @@ PAGES = [{'path': 'prevoyance-sante.html',
   'aside_text': 'Apportez vos contrats actuels : en un rendez-vous, nous vous disons ce qui vous protège '
                 'vraiment, ce qui manque, et ce que vous payez en trop.'},
  {'path': 'protection-entreprise.html',
-  'name': 'Protéger votre entreprise',
+  'name': 'Assurance des professionnels',
   'title': 'Assurance professionnelle à Toulouse : RC Pro, multirisque, décennale | Cabinet Valorys',
   'desc': 'RC professionnelle, multirisque, RC décennale et protection du dirigeant pour artisans, '
           'commerçants, professions libérales et PME à Toulouse.',

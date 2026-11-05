@@ -150,7 +150,7 @@
         function setLoading(on) {
             btn.disabled = on;
             spinner.classList.toggle('hidden', !on);
-            label.textContent = on ? 'Envoi en cours…' : 'Envoyer la Demande';
+            label.textContent = on ? 'Envoi en cours…' : 'Envoyer la demande';
         }
         function showFeedback(ok, msg) {
             feedback.className = 'rounded-[20px] p-4 text-sm font-body font-semibold ' + (ok ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800');

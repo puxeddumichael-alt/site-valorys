@@ -171,7 +171,7 @@ OPTIONS = [
     ("Épargne & retraite", ["Assurance vie", "Plan d'épargne retraite (PER)"]),
     ("Bilan & conseil", ["Bilan retraite & audit patrimonial"]),
     ("Financement", ["Assurance emprunteur", "Changer mon assurance de prêt en cours"]),
-    ("", ["Autre / Consultation Générale"]),
+    ("", ["Autre / consultation générale"]),
 ]
 
 def contact(selected=""):
@@ -187,19 +187,19 @@ def contact(selected=""):
         <div class="bg-white rounded-none flex flex-col lg:flex-row overflow-hidden shadow-2xl reveal">
             <div class="lg:w-1/3 bg-secondary p-12 lg:p-16 flex flex-col justify-between">
                 <div>
-                    <h2 class="font-headline font-black text-3xl md:text-4xl text-white mb-8 uppercase leading-none">Construisez votre avenir.</h2>
+                    <h2 class="font-headline font-black text-3xl md:text-4xl text-white mb-8 uppercase leading-none">Parlons de votre projet.</h2>
                     <div class="space-y-8 mt-12">
                         <div class="flex items-start gap-4">
                             <span class="material-symbols-outlined text-white" aria-hidden="true">location_on</span>
                             <div>
                                 <p class="text-white font-bold uppercase tracking-widest text-xs mb-1">Bureau</p>
-                                <p class="text-white/80">13 Port Saint-Étienne<br>31100 TOULOUSE</p>
+                                <p class="text-white/80">13 Port Saint-Étienne<br>31000 TOULOUSE</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
                             <span class="material-symbols-outlined text-white" aria-hidden="true">phone_in_talk</span>
                             <div>
-                                <p class="text-white font-bold uppercase tracking-widest text-xs mb-1">Ligne Directe</p>
+                                <p class="text-white font-bold uppercase tracking-widest text-xs mb-1">Ligne directe</p>
                                 <p class="text-white/80"><a href="tel:+33669945608" class="hover:text-white hover:underline underline-offset-4">06 69 94 56 08</a></p>
                             </div>
                         </div>
@@ -268,11 +268,11 @@ def contact(selected=""):
                 <form id="contact-form" class="space-y-8" novalidate role="tabpanel" aria-labelledby="tab-message" data-panel="message" hidden>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="relative group">
-                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom Complet <span class="text-secondary">*</span></label>
+                            <label for="cf-name" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Nom complet <span class="text-secondary">*</span></label>
                             <input id="cf-name" name="name" required minlength="2" maxlength="100" autocomplete="name" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="Prénom Nom" type="text">
                         </div>
                         <div class="relative group">
-                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse Email <span class="text-secondary">*</span></label>
+                            <label for="cf-email" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Adresse e-mail <span class="text-secondary">*</span></label>
                             <input id="cf-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="contact@entreprise.fr" type="email">
                         </div>
                     </div>
@@ -281,7 +281,7 @@ def contact(selected=""):
                         <input id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]" placeholder="+33 6 00 00 00 00" type="tel">
                     </div>
                     <div class="relative group">
-                        <label for="cf-type" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Type de Demande</label>
+                        <label for="cf-type" class="block text-primary font-headline font-extrabold uppercase text-xs tracking-widest mb-2">Type de demande</label>
                         <select id="cf-type" name="request_type" class="w-full bg-surface-container-highest border-none p-4 font-body focus:ring-2 focus:ring-primary/40 transition-all rounded-[20px]">
                             <option value=""{sel_default}>• Sélectionnez votre besoin •</option>{groups}
                         </select>
@@ -297,7 +297,7 @@ def contact(selected=""):
                     <label class="v-consent" for="cf-consent"><input id="cf-consent" type="checkbox" required> <span>J'accepte que mes données soient utilisées par le Cabinet Valorys pour me recontacter au sujet de ma demande. <span class="text-secondary">*</span></span></label>
                     <div id="cf-feedback" class="hidden rounded-[20px] p-4 text-sm font-body font-semibold" role="status" aria-live="polite"></div>
                     <button id="cf-submit" type="submit" class="bg-primary text-white font-headline font-black text-xl py-6 px-12 uppercase tracking-tighter hover:bg-secondary transition-colors duration-300 w-full md:w-auto rounded-[40px] flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed">
-                        <span id="cf-btn-label">Envoyer la Demande</span>
+                        <span id="cf-btn-label">Envoyer la demande</span>
                         <svg id="cf-spinner" class="hidden animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>
                     </button>
                     <p class="v-form-legal">Vos données sont destinées au seul Cabinet Valorys pour traiter votre demande, et conservées 3 ans au plus si aucune suite n'y est donnée. Vous pouvez y accéder, les rectifier ou les faire effacer en écrivant à contact@cabinet-valorys.com. <a href="/mentions-legales.html#politique-confidentialite">Politique de confidentialité</a>.</p>
@@ -320,8 +320,8 @@ def footer():
             <p class="text-slate-400 font-body text-sm uppercase tracking-widest mt-2">© {YEAR} Cabinet Valorys.</p>
         </div>
         <div class="flex flex-wrap justify-center gap-8">
-            <a class="{foot_link}" href="/mentions-legales.html#politique-confidentialite">Politique de Confidentialité</a>
-            <a class="{foot_link}" href="/mentions-legales.html">Mentions Légales</a>
+            <a class="{foot_link}" href="/mentions-legales.html#politique-confidentialite">Politique de confidentialité</a>
+            <a class="{foot_link}" href="/mentions-legales.html">Mentions légales</a>
             <a class="{foot_link}" href="/mentions-legales.html#reclamations">Réclamations</a>
             {'<button type="button" data-cookie-settings class="' + foot_link + '">Gestion des cookies</button>' if TRACKING else ''}
         </div>
@@ -364,7 +364,7 @@ LD_HOME = {
      "logo": {"@type": "ImageObject", "url": BASE + LOGO, "width": 1001, "height": 249},
      "image": BASE + "/public/Hero-Valo.png", "telephone": "+33669945608", "email": "contact@cabinet-valorys.com", "priceRange": "€€",
      "identifier": [{"@type": "PropertyValue", "name": "ORIAS", "value": CONFIG["orias"], "url": "https://www.orias.fr/"}],
-     "address": {"@type": "PostalAddress", "streetAddress": "13 Port Saint-Étienne", "postalCode": "31100", "addressLocality": "Toulouse", "addressRegion": "Occitanie", "addressCountry": "FR"},
+     "address": {"@type": "PostalAddress", "streetAddress": "13 Port Saint-Étienne", "postalCode": "31000", "addressLocality": "Toulouse", "addressRegion": "Occitanie", "addressCountry": "FR"},
      "geo": {"@type": "GeoCoordinates", "latitude": 43.598, "longitude": 1.449},
      "openingHoursSpecification": [
         {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "20:00"},
@@ -382,7 +382,7 @@ LD_HOME = {
 }
 
 def index():
-    return head("Courtier en assurance à Toulouse : prévoyance, santé, retraite | Cabinet Valorys",
+    return head("Courtier en assurance et gestion de patrimoine à Toulouse | Cabinet Valorys",
                 "Cabinet Valorys, courtier indépendant à Toulouse : prévoyance, mutuelle santé, retraite et assurance des professionnels. Plus de 60 compagnies comparées pour votre sérénité.",
                 "index.html", [LD_HOME], preload_hero=True) + nav(True) + f"""
 <!-- ===== HERO ===== -->
@@ -411,7 +411,7 @@ def index():
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C0392B] to-red-400">les meilleures solutions.</span>
             </h1>
             <p class="hero-subtitle text-slate-300 text-base md:text-lg max-w-lg font-medium leading-relaxed mb-10">
-                Nous accompagnons particuliers et professionnels avec une approche indépendante en protection sociale, retraite et épargne.
+                Nous accompagnons particuliers, professionnels et entreprises avec une approche indépendante : protection sociale, épargne, retraite et assurance de prêt.
             </p>
             <div class="hero-cta flex flex-col sm:flex-row items-start gap-6">
                 <a href="#contact" class="bg-secondary text-white px-8 py-4 font-body font-semibold text-base rounded-[40px] hover:brightness-110 hover:scale-[1.02] transition-all duration-200">Demander une étude gratuite</a>
@@ -426,7 +426,7 @@ def index():
     <div class="container mx-auto px-8">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
             <div class="max-w-2xl">
-                <h2 class="font-headline font-black text-3xl md:text-5xl tracking-tight text-primary uppercase mb-4">Notre Expertise</h2>
+                <h2 class="font-headline font-black text-3xl md:text-5xl tracking-tight text-primary uppercase mb-4">Notre expertise</h2>
                 <div class="h-1.5 w-24 bg-secondary"></div>
             </div>
             <p class="font-body text-on-surface-variant max-w-md text-lg">
@@ -528,7 +528,7 @@ def index():
             </div>
             <div class="reveal-right">
                 <h2 class="font-headline font-black text-3xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight tracking-tighter">
-                    Une expertise locale.<br>
+                    Une expertise de proximité.<br>
                     <span class="text-secondary">Une vision globale.</span>
                 </h2>
                 <p class="text-slate-300 text-xl font-medium mb-12 leading-relaxed">
@@ -575,18 +575,18 @@ def index():
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="text-center group reveal stagger-1">
                 <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">verified_user</span></div>
-                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">100% Indépendant</h3>
+                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">100 % indépendant</h3>
                 <p class="text-on-surface-variant font-medium">Aucune exclusivité avec un assureur : nous agissons dans votre intérêt, en sélectionnant, comparant et négociant les solutions adaptées à votre situation.</p>
             </div>
             <div class="text-center group reveal stagger-2">
                 <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">support_agent</span></div>
-                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Gestion des Sinistres</h3>
+                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Gestion des sinistres</h3>
                 <p class="text-on-surface-variant font-medium">Un interlocuteur dédié vous accompagne de la déclaration à l'indemnisation. Nous défendons vos droits auprès des assureurs à chaque étape du sinistre.</p>
             </div>
             <div class="text-center group reveal stagger-3">
-                <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">compare_arrows</span></div>
-                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Multi-Assureurs</h3>
-                <p class="text-on-surface-variant font-medium">Parce que chaque situation est unique, nous comparons plus de 60 compagnies partenaires pour vous proposer des garanties adaptées à vos besoins.</p>
+                <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">manage_search</span></div>
+                <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Audit social &amp; patrimonial</h3>
+                <p class="text-on-surface-variant font-medium">Avant toute recommandation, nous faisons le point complet sur votre situation : protection, retraite, épargne et patrimoine.</p>
             </div>
         </div>
     </div>
@@ -689,7 +689,7 @@ def legal():
 <p><strong>{CONFIG["raison_sociale"]}</strong>, exerçant sous le nom commercial <strong>{CONFIG["nom_commercial"]}</strong><br>
 {v("forme", "forme juridique")} au capital de {v("capital", "montant du capital")}<br>
 {v("siren", "SIREN et ville du RCS")}<br>
-Siège : 13 Port Saint-Étienne, 31100 Toulouse<br>
+Siège : 13 Port Saint-Étienne, 31000 Toulouse<br>
 Téléphone : 06 69 94 56 08 · Email : <a href="mailto:contact@cabinet-valorys.com">contact@cabinet-valorys.com</a><br>
 Directeur de la publication : Michaël Puxeddu, gérant.</p>
 
@@ -709,7 +709,7 @@ Directeur de la publication : Michaël Puxeddu, gérant.</p>
 <p>Pour toute réclamation, vous pouvez écrire au cabinet :</p>
 <ul>
 <li>par email : <a href="mailto:contact@cabinet-valorys.com">contact@cabinet-valorys.com</a></li>
-<li>par courrier : Cabinet Valorys, Service réclamations, 13 Port Saint-Étienne, 31100 Toulouse</li>
+<li>par courrier : Cabinet Valorys, Service réclamations, 13 Port Saint-Étienne, 31000 Toulouse</li>
 </ul>
 <p>Nous accusons réception de votre réclamation dans un délai maximal de 10 jours ouvrables, et vous apportons une réponse dans un délai maximal de 2 mois à compter de sa réception, sauf circonstances particulières dont nous vous tiendrons informé.</p>
 <h3>Médiation</h3>
@@ -719,7 +719,7 @@ Directeur de la publication : Michaël Puxeddu, gérant.</p>
 <p>OVH SAS, 2 rue Kellermann, 59100 Roubaix, France — <a href="https://www.ovhcloud.com" rel="noopener" target="_blank">ovhcloud.com</a>.</p>
 
 <h2 id="politique-confidentialite">Politique de confidentialité</h2>
-<p><strong>Responsable du traitement :</strong> {CONFIG["raison_sociale"]} ({CONFIG["nom_commercial"]}), 13 Port Saint-Étienne, 31100 Toulouse.</p>
+<p><strong>Responsable du traitement :</strong> {CONFIG["raison_sociale"]} ({CONFIG["nom_commercial"]}), 13 Port Saint-Étienne, 31000 Toulouse.</p>
 <p><strong>Données collectées par le formulaire :</strong> nom, email, téléphone (facultatif), type de demande et message.</p>
 <p><strong>Finalité et base légale :</strong> répondre à votre demande et, le cas échéant, préparer un rendez-vous. Le traitement repose sur votre consentement, donné en cochant la case du formulaire, puis sur les mesures précontractuelles prises à votre demande.</p>
 <p><strong>Destinataires :</strong> le seul Cabinet Valorys. Vos données ne sont ni vendues ni cédées. Elles sont hébergées en France par OVH.</p>
