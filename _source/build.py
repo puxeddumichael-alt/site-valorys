@@ -437,12 +437,13 @@ def index():
             <a href="{URL['epargne-entreprise.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl border-l-8 border-secondary reveal stagger-2">
                 <div class="p-10 flex flex-col h-full justify-between">
                     <div>
-                        <span class="material-symbols-outlined text-primary text-4xl mb-6" aria-hidden="true">group</span>
+                        <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">group</span></span>
                         <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne Salariale</h3>
                         <p class="text-on-surface-variant">IFC, PER d'entreprise, intéressement : des dispositifs pour valoriser vos collaborateurs et anticiper vos engagements.</p>
                         {more()}
                     </div>
                 </div>
+                <div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">group</span></div>
             </a>
 
             <a href="{URL['prevoyance-sante.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-primary rounded-xl reveal stagger-3">
@@ -459,20 +460,22 @@ def index():
 
             <a href="{URL['epargne-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
-                    <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">savings</span>
+                    <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">savings</span></span>
                     <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne &amp; Retraite</h3>
                     <p class="text-on-surface-variant">Assurance vie et PER : développer votre capital, maîtriser votre fiscalité et préparer votre retraite sereinement.</p>
                     {more()}
                 </div>
+                <div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">savings</span></div>
             </a>
 
             <a href="{URL['bilan-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
-                    <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">account_balance</span>
+                    <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
                     <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; patrimonial</h3>
                     <p class="text-on-surface-variant">Analyse complète de votre situation, projection de vos revenus futurs et repérage des manques de protection.</p>
                     {more()}
                 </div>
+                <div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">account_balance</span></div>
             </a>
 
             <a href="/assurance-emprunteur.html" class="v-card-link v-emp-card group relative overflow-hidden bg-primary rounded-xl border-l-8 border-secondary reveal">
