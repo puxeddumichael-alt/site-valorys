@@ -105,7 +105,7 @@ def head(title, desc, path, ld=None, noindex=False, preload_hero=False):
 NAV_SVC = [(q["path"], q["name"]) for q in PAGES] + [("assurance-emprunteur.html", "Assurance emprunteur")]
 # Menu « Notre expertise » : mêmes titres et mêmes contrats que les cartes de l'accueil
 NAV_CARTES = {
-    "protection-entreprise.html": ("Préserver votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
+    "protection-entreprise.html": ("Pérenniser votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
     "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
     "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Santé · Individuelle &amp; collective"),
     "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER · Capitalisation"),
@@ -441,7 +441,7 @@ def index():
                 <div class="absolute bottom-0 left-0 p-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
                     <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale · Protection juridique</span>
-                    <h3 class="font-headline font-extrabold text-4xl text-white mb-4">Préserver votre entreprise</h3>
+                    <h3 class="font-headline font-extrabold text-3xl text-white mb-4 uppercase">Pérenniser votre entreprise</h3>
                     <p class="text-slate-300 max-w-md font-medium">Un sinistre, un litige client ou votre absence ne doivent pas mettre votre activité en péril. Nous adaptons chaque garantie à votre métier : professions libérales, artisans, commerçants et entreprises.</p>
                     {more()}
                 </div>
