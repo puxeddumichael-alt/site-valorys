@@ -611,7 +611,6 @@ def service(p):
             <h3>{html.escape(p["aside_title"])}</h3>
             <p>{html.escape(p["aside_text"])}</p>
             <a class="v-btn" href="#contact">Prendre rendez-vous</a>
-            <a class="v-tel" href="tel:+33669945608">ou appelez le 06 69 94 56 08</a>
         </aside>
     </div>
 </section>

@@ -269,3 +269,229 @@ PAGES = [{'path': 'prevoyance-sante.html',
   'aside_title': 'Demander votre bilan',
   'aside_text': 'Nous vous indiquons les documents à rassembler et fixons un premier rendez-vous, au cabinet '
                 'ou en visio.'}]
+
+# ---------------------------------------------------------------------------
+# Blocs d'expertise des pages services (même présentation que la page assurance emprunteur).
+# Chaque page peut avoir : checks_title / checks_lead / checks (titre, texte),
+# profils_title / profils_lead / profil_wide (icône, titre, texte) / profils (icône, titre, texte).
+_EXPERT = {
+ 'protection-entreprise.html': {
+  'lead': "Artisan, commerçant, profession libérale ou dirigeant de PME : un sinistre mal couvert peut "
+          "menacer votre activité. Nous adaptons chaque contrat à votre métier réel, et nous restons à vos "
+          "côtés quand il faut déclarer un sinistre.",
+  'checks_title': 'Le prix compte.<br><span class="text-secondary">Les garanties aussi.</span>',
+  'checks_lead': "Un contrat professionnel bon marché peut cacher une activité mal déclarée, un plafond trop "
+                 "bas ou une perte d'exploitation absente. Nous relisons vos contrats ligne par ligne, avant "
+                 "que le sinistre ne le fasse à votre place.",
+  'checks': [('Vos activités déclarées', "chaque activité exercée doit figurer au contrat : une activité "
+              "oubliée, c'est un sinistre non couvert."),
+             ('Plafonds et franchises', "montants garantis par sinistre et par année, sous-limites et "
+              "franchises adaptés à la taille de vos chantiers et de vos clients."),
+             ('Capitaux assurés', "locaux, matériel et stock déclarés à leur juste valeur, pour éviter la "
+              "règle proportionnelle en cas de sous-assurance."),
+             ("Perte d'exploitation", "durée d'indemnisation et base de calcul sur votre marge brute, pour "
+              "continuer à payer vos charges après un sinistre."),
+             ('Décennale', "activités couvertes, attestation conforme à vos devis, contrat en vigueur à "
+              "l'ouverture de chaque chantier."),
+             ('RC exploitation et professionnelle', "dommages causés pendant vos travaux et après la "
+              "livraison, erreurs de conseil, dommages immatériels."),
+             ('Risques nouveaux', "cyber-risques, protection juridique, atteinte à l'environnement selon "
+              "votre activité."),
+             ('Protection du dirigeant', "prévoyance, garantie homme clé et assurance des associés, "
+              "cohérentes avec vos statuts.")],
+  'profils_title': 'Toutes les entreprises, du créateur à la PME',
+  'profils_lead': "Première installation ou entreprise de plusieurs salariés : chaque dossier bénéficie de la "
+                  "même analyse de vos risques et du même suivi, jusqu'au sinistre s'il survient.",
+  'profil_wide': ('storefront', 'Artisans, commerçants et indépendants',
+                  "RC Pro, multirisque, local et matériel : c'est le quotidien de notre activité. Nous "
+                  "comparons les assureurs sur votre métier précis, nous vous remettons les attestations "
+                  "dont vous avez besoin et nous gérons le changement de contrat."),
+  'profils': [('construction', 'Bâtiment et décennale',
+               "Maçons, électriciens, plombiers, menuisiers : décennale adaptée à vos activités, y compris "
+               "pour les entreprises en création sans historique d'assurance."),
+              ('gavel', 'Professions réglementées',
+               "Santé, droit, conseil, immobilier : RC Pro obligatoire aux montants exigés par votre ordre "
+               "ou votre réglementation."),
+              ('rocket_launch', "Créateurs d'entreprise",
+               "Les bonnes garanties dès le premier jour, sans payer pour des options inutiles au "
+               "démarrage."),
+              ('restaurant', 'Commerces et restaurants',
+               "Locaux, stock, bris de machine et perte d'exploitation : de quoi rouvrir après un "
+               "dégât des eaux ou un incendie."),
+              ('work', 'Dirigeants et associés',
+               "Prévoyance du dirigeant, homme clé, garantie des associés : la continuité de "
+               "l'entreprise si vous êtes absent."),
+              ('support_agent', 'Accompagnement sinistre',
+               "Déclaration, échanges avec l'expert, suivi jusqu'à l'indemnisation : vous ne restez pas "
+               "seul face à l'assureur.")],
+  'faq_more': [("Qu'est-ce que la règle proportionnelle ?",
+                "Si les biens assurés sont déclarés pour une valeur inférieure à leur valeur réelle, "
+                "l'assureur peut réduire l'indemnité dans la même proportion. Nous vérifions vos capitaux "
+                "assurés pour éviter cette mauvaise surprise.")],
+  'aside_text': "Nous relisons vos contrats professionnels actuels et vous signalons les garanties "
+                "manquantes, mal calibrées ou en double."},
+ 'epargne-retraite.html': {
+  'lead': "La retraite se prépare mieux quand on sait ce que l'on va toucher. Nous partons de vos droits "
+          "réels, puis nous choisissons avec vous les enveloppes adaptées : assurance vie, PER, ou les "
+          "deux, avec des frais et une fiscalité maîtrisés.",
+  'checks_title': 'Le rendement compte.<br><span class="text-secondary">Les frais et la fiscalité aussi.</span>',
+  'checks_lead': "Deux contrats d'apparence proche peuvent produire des résultats très différents au bout de "
+                 "quinze ans. Nous comparons ce qui fait vraiment la différence, et nous vous l'expliquons "
+                 "par écrit.",
+  'checks': [('Les frais', "frais sur versements, de gestion et d'arbitrage : leur effet sur votre "
+              "épargne sur toute la durée du contrat."),
+             ("L'allocation", "part de fonds en euros et d'unités de compte selon votre horizon et votre "
+              "tolérance au risque."),
+             ('Le mode de gestion', "gestion libre, pilotée ou à horizon, et ce que chacune implique "
+              "concrètement pour vous."),
+             ("L'avantage fiscal du PER", "déduction des versements selon votre taux marginal "
+              "d'imposition et vos plafonds disponibles."),
+             ('La sortie', "capital, rente ou les deux : fiscalité de la sortie et cas de déblocage "
+              "anticipé, comme l'achat de la résidence principale."),
+             ("La fiscalité de l'assurance vie", "abattements après huit ans et rachats organisés pour "
+              "limiter l'impôt."),
+             ('La transmission', "clause bénéficiaire rédigée sur mesure, abattements selon l'âge des "
+              "versements."),
+             ('Vos anciens contrats', "Madelin, PERP, article 83 : faut-il transférer, ou conserver des "
+              "garanties anciennes plus favorables ?")],
+  'profils_title': 'Toutes les situations, du premier versement à la transmission',
+  'profils_lead': "Petite épargne régulière ou patrimoine à transmettre : chaque projet bénéficie de la même "
+                  "analyse et d'un conseil écrit, avant toute souscription.",
+  'profil_wide': ('savings', 'Salariés et familles',
+                  "Se constituer une épargne disponible, préparer un complément de retraite, protéger son "
+                  "conjoint : c'est le quotidien de notre activité. Nous vous aidons à fixer le bon "
+                  "effort d'épargne et à choisir les enveloppes adaptées."),
+  'profils': [('storefront', 'Indépendants et professions libérales',
+               "Le PER, successeur du Madelin, pour compenser des retraites obligatoires souvent "
+               "faibles, avec des cotisations déductibles."),
+              ('trending_up', 'Revenus fortement imposés',
+               "Cadres et dirigeants : l'intérêt du PER est d'autant plus grand que votre taux "
+               "marginal d'imposition est élevé."),
+              ('event_available', 'Proches de la retraite',
+               "Choix entre capital et rente, calendrier de sortie et fiscalité : les décisions des "
+               "dernières années comptent le plus."),
+              ('family_restroom', 'Transmission',
+               "Assurance vie et clause bénéficiaire pour transmettre à vos proches dans un cadre "
+               "fiscal favorable."),
+              ('sync_alt', 'Anciens contrats retraite',
+               "Madelin, PERP, article 83, Préfon : nous analysons frais et garanties avant de "
+               "conseiller un transfert, ou non."),
+              ('account_balance', 'Agents publics',
+               "Pension calculée sur le dernier traitement, primes peu prises en compte : un "
+               "complément souvent indispensable.")],
+  'faq_more': [("Comment l'assurance vie est-elle imposée après huit ans ?",
+                "Après huit ans, les gains retirés bénéficient chaque année d'un abattement de 4 600 € "
+                "pour une personne seule et de 9 200 € pour un couple soumis à imposition commune, avant "
+                "application de l'impôt. Les prélèvements sociaux restent dus.")],
+  'aside_text': "Nous reconstituons votre carrière et chiffrons vos futurs revenus avant de parler "
+                "placement : la recommandation vient après le diagnostic."},
+ 'epargne-entreprise.html': {
+  'lead': "Fidéliser vos salariés, préparer la retraite du dirigeant, anticiper le coût des départs à la "
+          "retraite : ces dispositifs sont efficaces, à condition d'être chiffrés et dimensionnés "
+          "correctement. C'est notre travail.",
+  'checks_title': 'Un engagement social<br><span class="text-secondary">se chiffre et se pilote.</span>',
+  'checks_lead': "Les indemnités de fin de carrière sont un passif que beaucoup d'entreprises découvrent au "
+                 "moment du départ. Nous le mesurons, nous le provisionnons et nous le suivons dans le "
+                 "temps.",
+  'checks': [('Votre engagement IFC', "calculé salarié par salarié à partir de l'âge, de l'ancienneté, du "
+              "salaire et des probabilités de départ."),
+             ('Votre convention collective', "indemnité légale ou conventionnelle : la plus favorable au "
+              "salarié s'applique, et elle change souvent le montant."),
+             ('Le calendrier des départs', "départs rapprochés et pics de trésorerie repérés plusieurs "
+              "années à l'avance."),
+             ('Le traitement fiscal', "cotisations du contrat IFC déductibles du résultat, dans le cadre "
+              "prévu par la réglementation."),
+             ('Le fonds constitué', "gestion et rendement de l'épargne versée, et versement au moment "
+              "de chaque départ."),
+             ('Les catégories objectives', "bénéficiaires du PER d'entreprise définis selon des critères "
+              "conformes, pour sécuriser le régime social."),
+             ('Le statut du dirigeant', "assimilé salarié ou travailleur non salarié : les solutions "
+              "de retraite ne sont pas les mêmes."),
+             ("La valeur de l'entreprise", "un passif social provisionné rassure un repreneur ou un "
+              "banquier lors d'une cession.")],
+  'profils_title': 'Toutes les entreprises, de la TPE à la PME',
+  'profils_lead': "Quelques salariés ou une équipe structurée : chaque entreprise bénéficie du même chiffrage "
+                  "et d'un suivi d'une année sur l'autre.",
+  'profil_wide': ('apartment', 'TPE et PME de la région',
+                  "Anticiper les indemnités de départ et offrir un complément de retraite à vos "
+                  "salariés : c'est le quotidien de notre activité. Nous chiffrons, nous mettons en place "
+                  "et nous suivons les contrats avec vous et votre expert-comptable."),
+  'profils': [('elderly', 'Équipe expérimentée',
+               "Plusieurs départs à prévoir dans les prochaines années : nous lissons leur coût pour "
+               "protéger votre trésorerie."),
+              ('work', 'Retraite du dirigeant',
+               "PER d'entreprise ou individuel selon votre statut, pour préparer votre propre retraite "
+               "dans un cadre optimisé."),
+              ('badge', 'Cadres et collaborateurs clés',
+               "Un complément de retraite pour fidéliser et attirer, réservé à une catégorie objective "
+               "de salariés."),
+              ('handshake', 'Cession et transmission',
+               "Mesurer et provisionner le passif social avant de céder ou de transmettre votre "
+               "entreprise."),
+              ('menu_book', 'Conventions collectives',
+               "Indemnités conventionnelles parfois bien supérieures au minimum légal : nous les "
+               "intégrons au calcul."),
+              ('calculate', 'Avec votre expert-comptable',
+               "Chiffres, provisions et écritures préparés avec lui, pour une mise en place sans "
+               "friction.")],
+  'faq_more': [("Pourquoi externaliser les IFC auprès d'un assureur ?",
+                "Pour étaler la dépense dans le temps au lieu de la subir au moment du départ, "
+                "bénéficier de la déductibilité des cotisations et disposer d'un fonds dédié qui verse "
+                "l'indemnité le moment venu.")],
+  'aside_text': "Envoyez-nous la liste anonymisée de vos salariés (âge, ancienneté, salaire) : nous "
+                "estimons vos futures IFC et le calendrier des départs."},
+ 'bilan-retraite.html': {
+  'checks_title': 'Une carrière<br><span class="text-secondary">se vérifie ligne par ligne.</span>',
+  'checks_lead': "Les relevés de carrière comportent souvent des oublis : périodes manquantes, salaires "
+                 "mal reportés, régimes oubliés. Nous les repérons avant qu'ils ne coûtent sur votre "
+                 "pension.",
+  'checks': [('Vos trimestres', "trimestres validés et cotisés, périodes de chômage, de maladie, de "
+              "maternité ou de service militaire."),
+             ('Vos régimes successifs', "régime général, indépendants, fonction publique, professions "
+              "libérales : chaque caisse calcule à sa façon."),
+             ('Vos points de complémentaire', "Agirc-Arrco, Ircantec, RAFP ou caisses de libéraux : points "
+              "acquis et valeur estimée."),
+             ('Votre âge de départ', "âge légal, durée d'assurance requise, décote et surcote selon "
+              "plusieurs dates de départ."),
+             ('Les carrières longues', "conditions de départ anticipé si vous avez commencé à travailler "
+              "jeune."),
+             ('Les majorations', "enfants, handicap, situations particulières : des trimestres ou des "
+              "majorations parfois oubliés."),
+             ('Le rachat de trimestres', "coût, gain de pension et délai de rentabilité, pour décider en "
+              "connaissance de cause."),
+             ('Votre protection globale', "prévoyance, santé, épargne et conjoint : la retraite replacée "
+              "dans l'ensemble de votre situation.")],
+  'profils_title': 'Toutes les carrières, des plus linéaires aux plus complexes',
+  'profils_lead': "Une seule caisse ou un parcours en plusieurs étapes : chaque bilan bénéficie de la même "
+                  "vérification et de recommandations écrites.",
+  'profil_wide': ('badge', 'Salariés du privé',
+                  "Vérifier son relevé, connaître sa date de départ et le montant de sa pension : c'est "
+                  "le quotidien de notre activité. Nous vous remettons une estimation claire et les "
+                  "corrections à demander à votre caisse."),
+  'profils': [('account_balance', 'Agents publics',
+               "Pension calculée sur les six derniers mois, primes et RAFP, services validés : un calcul "
+               "spécifique que nous maîtrisons."),
+              ('storefront', 'Indépendants et libéraux',
+               "SSI, CARMF, CIPAV, CARPIMKO : des règles propres à chaque caisse et des retraites souvent "
+               "à compléter."),
+              ('alt_route', 'Polypensionnés',
+               "Plusieurs régimes au cours de la carrière : nous rassemblons et vérifions l'ensemble de "
+               "vos droits."),
+              ('work', 'Dirigeants de société',
+               "Arbitrage entre salaire et dividendes : un choix qui a des conséquences directes sur "
+               "votre retraite."),
+              ('schedule', 'Carrières longues',
+               "Vérification des conditions de départ anticipé et des trimestres de début de carrière."),
+              ('favorite', 'Couples',
+               "Pension de réversion, protection du conjoint et dates de départ coordonnées.")],
+  'faq_more': [("Le bilan retraite est-il utile si mon relevé semble complet ?",
+                "Oui : les erreurs sont fréquentes et ne se voient pas toujours au premier coup d'œil. "
+                "Plus elles sont repérées tôt, plus elles sont faciles à faire corriger par votre "
+                "caisse.")],
+  'aside_text': "Nous vous indiquons les documents à rassembler et fixons un premier rendez-vous, au "
+                "cabinet ou en visio."},
+}
+for _p in PAGES:
+    _x = _EXPERT.get(_p['path'], {})
+    _p['faqs'] = list(_p['faqs']) + _x.pop('faq_more', [])
+    _p.update(_x)
