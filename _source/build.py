@@ -702,6 +702,10 @@ EMP_FAQ = [
      "Pas toujours. Aucun questionnaire de santé ne peut être demandé si la part assurée de vos crédits immobiliers ne dépasse pas 200 000 € par personne et si le prêt est intégralement remboursé avant vos 60 ans."),
     ("J'ai ou j'ai eu un problème de santé, puis-je être assuré ?",
      "Oui, dans la plupart des cas. La convention AERAS encadre l'assurance des personnes présentant un risque aggravé de santé, et le droit à l'oubli s'applique 5 ans après la fin du protocole thérapeutique d'un cancer ou d'une hépatite C, sans rechute. Nous connaissons les assureurs qui acceptent ces profils."),
+    ("Qu'est-ce que l'« équivalence des garanties » exigée par la banque ?",
+     "Le Comité consultatif du secteur financier (CCSF) a fixé une liste de 18 critères. Votre banque en retient au maximum 11 pour les garanties décès et incapacité (et jusqu'à 4 pour la perte d'emploi) et doit vous les communiquer, notamment dans la fiche standardisée d'information. Nous vérifions chaque critère avant de vous proposer un contrat : c'est ce qui évite un refus."),
+    ("Je suis fonctionnaire ou agent territorial : mon assurance est-elle adaptée ?",
+     "Pas toujours. Grâce au maintien de traitement, un agent public perd peu de revenus pendant un arrêt de travail : un contrat qui n'indemnise que la perte de revenus (indemnitaire) peut alors ne presque rien verser. Une indemnisation forfaitaire, qui prend en charge l'échéance quel que soit votre salaire, est souvent plus protectrice. Nous accompagnons régulièrement les agents publics et les collectivités."),
     ("Combien coûte votre accompagnement ?",
      "Rien pour vous. Le cabinet est rémunéré par une commission versée par l'assureur retenu, incluse dans la cotisation."),
 ]
@@ -735,14 +739,14 @@ def emprunteur():
         <div>
             <div class="hero-badge flex items-center gap-3 mb-6">
                 <span class="block w-8 h-px bg-secondary"></span>
-                <span class="text-secondary font-body uppercase tracking-widest text-xs">Assurance emprunteur à Toulouse</span>
+                <span class="text-secondary font-body uppercase tracking-widest text-xs">Courtier en assurance emprunteur à Toulouse</span>
             </div>
             <h1 class="hero-title text-5xl lg:text-6xl text-white leading-tight mb-6 drop-shadow-2xl" style="font-family:'DM Serif Display',serif;">
                 Votre assurance de prêt,<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C0392B] to-red-400">au juste prix.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C0392B] to-red-400">entre des mains expertes.</span>
             </h1>
             <p class="hero-subtitle text-slate-300 text-base md:text-lg max-w-lg font-medium leading-relaxed mb-10">
-                Nouveau crédit ou prêt en cours : depuis la loi Lemoine, vous pouvez changer d'assurance emprunteur à tout moment, sans frais. Nous comparons les contrats et nous gérons les démarches avec votre banque.
+                Nouveau crédit ou prêt en cours : nous analysons votre contrat garantie par garantie, nous mettons en concurrence plus de 60 partenaires et nous menons la substitution avec votre banque, jusqu'à son accord.
             </p>
             <div class="hero-cta flex flex-col sm:flex-row items-start gap-6">
                 <a href="#contact" class="bg-secondary text-white px-8 py-4 font-body font-semibold text-base rounded-[40px] hover:brightness-110 hover:scale-[1.02] transition-all duration-200">Comparer mon assurance</a>
@@ -787,16 +791,36 @@ def emprunteur():
                 <h2 class="font-headline font-black text-3xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight tracking-tighter">
                     Le prix compte.<br><span class="text-secondary">Les garanties aussi.</span>
                 </h2>
-                <p class="v-lead-dark">Deux contrats au même tarif peuvent protéger très différemment le jour d'un arrêt de travail. Nous lisons les conditions générales à votre place et vous montrons les écarts, ligne par ligne.</p>
+                <p class="v-lead-dark">Deux contrats au même tarif peuvent protéger très différemment le jour d'un arrêt de travail. Un comparateur en ligne compare des prix ; nous comparons des garanties. Nous lisons les conditions générales à votre place et vous montrons les écarts, ligne par ligne.</p>
             </div>
             <ul class="v-checks reveal-right">
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Les critères de votre banque</strong> : les 11 critères d'équivalence (parmi les 18 du CCSF) qu'elle exige, vérifiés un par un.</span></li>
                 <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Décès et PTIA</strong> : capital remboursé à la banque, pour protéger votre famille.</span></li>
-                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>ITT et invalidité</strong> : franchise, durée d'indemnisation, mode de calcul forfaitaire ou indemnitaire.</span></li>
-                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Exclusions</strong> : pathologies du dos, troubles psychiques, sports et métiers à risque.</span></li>
-                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Mode de tarification</strong> : sur le capital initial ou sur le capital restant dû, ce qui change le coût total.</span></li>
-                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Quotité</strong> : répartition de la couverture entre co-emprunteurs, selon vos revenus.</span></li>
-                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Profils particuliers</strong> : fumeurs, sportifs, professions exposées, risques aggravés de santé (convention AERAS).</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>ITT et invalidité</strong> : franchise, durée d'indemnisation, seuil d'invalidité (IPT, IPP), et surtout calcul forfaitaire ou indemnitaire.</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Exclusions</strong> : pathologies du dos et troubles psychiques, souvent exclus sans hospitalisation, et leur éventuel rachat.</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Couverture de votre métier</strong> : incapacité appréciée par rapport à votre profession ou à toute activité, ce qui change tout pour un indépendant.</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Coût réel</strong> : tarification sur le capital initial ou restant dû, TAEA et coût total sur toute la durée du prêt.</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Quotité</strong> : répartition de la couverture entre co-emprunteurs, selon vos revenus et votre situation familiale.</span></li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">verified_user</span><span><strong>Formalités</strong> : questionnaire de santé, droit à l'oubli, convention AERAS et justificatifs selon le montant emprunté.</span></li>
             </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROFILS ===== -->
+<section class="py-24 bg-surface-container-low" id="profils">
+    <div class="container mx-auto px-8">
+        <div class="v-head-row reveal">
+            <div><h2 class="v-section-title">Les dossiers que nous maîtrisons</h2><div class="v-bar"></div></div>
+            <p class="v-lead-light">Les situations qui posent problème aux banques et aux plateformes en ligne sont précisément celles où l'accompagnement d'un courtier fait la différence.</p>
+        </div>
+        <div class="v-trust v-trust3 reveal">
+            <div><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span><h3>Risques aggravés de santé</h3><p>Antécédents médicaux, maladie chronique, surprime ou exclusion proposée : nous connaissons les assureurs qui acceptent ces profils et appliquons la convention AERAS et le droit à l'oubli.</p></div>
+            <div><span class="material-symbols-outlined" aria-hidden="true">account_balance</span><h3>Agents publics</h3><p>Fonctionnaires et agents des collectivités : le maintien de traitement change la façon de choisir la garantie incapacité. Nous vous évitons de payer pour une couverture qui ne vous versera rien.</p></div>
+            <div><span class="material-symbols-outlined" aria-hidden="true">stethoscope</span><h3>Professions libérales et médicales</h3><p>Médecins, kinés, infirmiers, avocats, indépendants : incapacité appréciée dans votre profession, franchises adaptées, garanties cohérentes avec votre prévoyance.</p></div>
+            <div><span class="material-symbols-outlined" aria-hidden="true">engineering</span><h3>Métiers et sports à risque</h3><p>Travail en hauteur, conduite, port de charges, sports mécaniques ou aériens : nous recherchons les contrats qui couvrent votre activité sans exclusion.</p></div>
+            <div><span class="material-symbols-outlined" aria-hidden="true">apartment</span><h3>Investissement et gros capitaux</h3><p>Locatif, SCI, plusieurs prêts, capitaux élevés : quotités, formalités médicales et financières et coût global optimisés sur l'ensemble de vos financements.</p></div>
+            <div><span class="material-symbols-outlined" aria-hidden="true">sync_alt</span><h3>Prêts en cours</h3><p>Votre crédit a déjà quelques années ? Nous chiffrons l'économie réelle sur la durée restante et prenons en charge la substitution de A à Z.</p></div>
         </div>
     </div>
 </section>
@@ -835,11 +859,11 @@ def emprunteur():
                 <img alt="Michaël Puxeddu, courtier en assurance à Toulouse" width="341" height="512" loading="lazy" decoding="async" class="rounded-none shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700 w-4/5 object-cover mx-auto block" src="/public/PUXEDDU-Michael.webp">
             </div>
             <div class="reveal-right">
-                <h2 class="font-headline font-black text-3xl md:text-5xl text-white mb-8 leading-tight tracking-tighter">Un courtier,<br><span class="text-secondary">pas une plateforme.</span></h2>
-                <p class="v-lead-dark">Je suis Michaël Puxeddu, courtier indépendant à Toulouse. Vous avez un interlocuteur unique, joignable par téléphone, qui suit votre dossier jusqu'à l'acceptation par la banque et reste présent si vous avez un sinistre.</p>
+                <h2 class="font-headline font-black text-3xl md:text-5xl text-white mb-8 leading-tight tracking-tighter">Un expert,<br><span class="text-secondary">pas une plateforme.</span></h2>
+                <p class="v-lead-dark">Je suis Michaël Puxeddu, expert en protection sociale et courtier indépendant à Toulouse. Vous avez un interlocuteur unique, joignable par téléphone, qui suit votre dossier jusqu'à l'acceptation par la banque et reste à vos côtés le jour où vous avez besoin de votre contrat.</p>
                 <div class="grid grid-cols-2 gap-8 mt-12">
-                    <div class="border-l-4 border-secondary pl-6"><span class="v-stat">60+</span><span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Compagnies partenaires</span></div>
-                    <div class="border-l-4 border-secondary pl-6"><span class="v-stat">0 €</span><span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Frais pour vous</span></div>
+                    <div class="border-l-4 border-secondary pl-6"><span class="v-stat">15+</span><span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Années d'expertise</span></div>
+                    <div class="border-l-4 border-secondary pl-6"><span class="v-stat">60+</span><span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Partenaires</span></div>
                 </div>
             </div>
         </div>
