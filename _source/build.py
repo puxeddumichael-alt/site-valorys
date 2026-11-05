@@ -434,7 +434,7 @@ def index():
                 </div>
             </a>
 
-            <a href="{URL['epargne-entreprise.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-surface-container-highest rounded-xl border-l-8 border-secondary reveal stagger-2">
+            <a href="{URL['epargne-entreprise.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl border-l-8 border-secondary reveal stagger-2">
                 <div class="p-10 flex flex-col h-full justify-between">
                     <div>
                         <span class="material-symbols-outlined text-primary text-4xl mb-6" aria-hidden="true">group</span>
@@ -457,22 +457,23 @@ def index():
                 </div>
             </a>
 
-            <div class="md:col-span-8 group relative overflow-hidden bg-white rounded-xl shadow-xl shadow-slate-200/50 reveal stagger-4">
-                <div class="flex flex-col md:flex-row h-full">
-                    <a href="{URL['epargne-retraite.html']}" class="v-card-link w-full md:w-1/2 p-10 pt-12 flex flex-col justify-start">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">savings</span>
-                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne &amp; Retraite</h3>
-                        <p class="text-on-surface-variant">Assurance vie et PER : développer votre capital, maîtriser votre fiscalité et préparer votre retraite sereinement.</p>
-                        {more()}
-                    </a>
-                    <a href="{URL['bilan-retraite.html']}" class="v-card-link w-full md:w-1/2 p-10 pt-12 flex flex-col justify-start bg-surface-container-low border-l border-surface-container-highest">
-                        <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">account_balance</span>
-                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; patrimonial</h3>
-                        <p class="text-on-surface-variant">Analyse complète de votre situation, projection de vos revenus futurs et repérage des manques de protection.</p>
-                        {more()}
-                    </a>
+            <a href="{URL['epargne-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
+                <div class="p-10">
+                    <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">savings</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne &amp; Retraite</h3>
+                    <p class="text-on-surface-variant">Assurance vie et PER : développer votre capital, maîtriser votre fiscalité et préparer votre retraite sereinement.</p>
+                    {more()}
                 </div>
-            </div>
+            </a>
+
+            <a href="{URL['bilan-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
+                <div class="p-10">
+                    <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">account_balance</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; patrimonial</h3>
+                    <p class="text-on-surface-variant">Analyse complète de votre situation, projection de vos revenus futurs et repérage des manques de protection.</p>
+                    {more()}
+                </div>
+            </a>
 
             <a href="/assurance-emprunteur.html" class="v-card-link v-emp-card group relative overflow-hidden bg-primary rounded-xl border-l-8 border-secondary reveal">
                 <div class="v-emp-inner relative z-10">
@@ -483,9 +484,9 @@ def index():
                         {more()}
                     </div>
                     <ul class="v-emp-points">
-                        <li><strong>À tout moment</strong><span>résiliation sans frais ni préavis</span></li>
-                        <li><strong>Même taux</strong><span>votre crédit reste inchangé</span></li>
-                        <li><strong>0 € pour vous</strong><span>étude et démarches offertes</span></li>
+                        <li><strong>À tout moment</strong><span>résiliation sans préavis, même en cours de prêt</span></li>
+                        <li><strong>Même niveau de garantie</strong><span>équivalent à celui exigé par votre banque</span></li>
+                        <li><strong>Sans frais</strong><span>étude et démarches offertes</span></li>
                     </ul>
                 </div>
                 <div class="absolute -bottom-10 -right-10 opacity-10 scale-100 md:scale-150 text-white" aria-hidden="true">
