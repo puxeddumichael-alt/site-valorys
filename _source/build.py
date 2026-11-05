@@ -484,7 +484,7 @@ def index():
                         {more()}
                     </div>
                     <ul class="v-emp-points">
-                        <li><strong>À tout moment</strong><span>résiliation sans préavis, même en cours de prêt</span></li>
+                        <li><strong>À tout moment</strong><span>dès la signature ou en cours de prêt</span></li>
                         <li><strong>Même niveau de garantie</strong><span>équivalent à celui exigé par votre banque</span></li>
                         <li><strong>Sans frais</strong><span>étude et démarches offertes</span></li>
                     </ul>
@@ -693,7 +693,7 @@ def page404():
 # ------------------------------------------------------------------ page assurance emprunteur
 EMP_FAQ = [
     ("Puis-je changer d'assurance emprunteur en cours de prêt ?",
-     "Oui. Depuis la loi Lemoine, vous pouvez résilier votre assurance de prêt immobilier à tout moment, sans frais ni préavis, et la remplacer par un autre contrat offrant des garanties équivalentes."),
+     "Oui. Depuis la loi Lemoine, vous pouvez résilier votre assurance de prêt immobilier à tout moment, sans frais, et la remplacer par un autre contrat offrant des garanties équivalentes. Votre banque a 10 jours ouvrés pour accepter la substitution ; l'ancien contrat prend fin 10 jours après que votre assureur a reçu son accord, sans interruption de couverture."),
     ("Ma banque peut-elle refuser le changement ?",
      "Uniquement si les garanties du nouveau contrat ne sont pas équivalentes à celles qu'elle exige. Elle doit répondre dans un délai de 10 jours ouvrés et motiver un éventuel refus. Nous vérifions l'équivalence avant de vous proposer un contrat."),
     ("Le taux de mon crédit va-t-il changer ?",
@@ -763,7 +763,7 @@ def emprunteur():
             <div class="text-center group reveal stagger-1">
                 <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">schedule</span></div>
                 <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">À tout moment</h3>
-                <p class="text-on-surface-variant font-medium">Résiliation sans frais ni préavis, dès la signature de l'offre ou à n'importe quel moment de votre prêt.</p>
+                <p class="text-on-surface-variant font-medium">Résiliation sans frais, dès la signature de l'offre ou à n'importe quel moment de votre prêt. Nous gérons les délais avec la banque et l'assureur.</p>
             </div>
             <div class="text-center group reveal stagger-2">
                 <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-8 group-hover:bg-secondary transition-colors duration-300"><span class="material-symbols-outlined text-white text-4xl" aria-hidden="true">compare_arrows</span></div>
