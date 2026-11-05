@@ -465,7 +465,7 @@ def index():
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span>
                     <span class="v-card-tag v-card-tag-dark">Prévoyance · Mutuelle santé</span>
                     <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Protéger votre famille</h3>
-                    <p class="text-slate-400">Maintenir votre niveau de vie face aux aléas, assurer l'avenir de vos proches et bénéficier d'une couverture santé adaptée à toute la famille.</p>
+                    <p class="text-slate-400">Maintenir votre niveau de vie face aux aléas, assurer l'avenir de vos proches et bénéficier d'une couverture santé adaptée, pour votre famille comme pour vos salariés.</p>
                     {more()}
                 </div>
                 <div class="absolute -bottom-10 -right-10 opacity-10 scale-100 md:scale-150 text-white" aria-hidden="true">
