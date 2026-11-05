@@ -439,7 +439,7 @@ def index():
                     <div>
                         <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">group</span></span>
                         <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne Salariale</h3>
-                        <p class="text-on-surface-variant">PEE, PEI, PERECO, intéressement, PER d'entreprise et IFC : des dispositifs pour partager la valeur, fidéliser vos collaborateurs et anticiper vos engagements.</p>
+                        <p class="text-on-surface-variant">PEE, PEI, PERECO, intéressement et participation, PER d'entreprise et IFC : des dispositifs pour partager la valeur, fidéliser vos collaborateurs et anticiper vos engagements.</p>
                         {more()}
                     </div>
                 </div>
