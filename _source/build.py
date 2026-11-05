@@ -516,19 +516,19 @@ def index():
                 <div class="grid grid-cols-2 gap-8">
                     <div class="border-l-4 border-secondary pl-6">
                         <span class="block text-4xl font-headline font-black text-white mb-2"><span class="counter" data-target="15" data-suffix="+">15+</span></span>
-                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Ans d'expérience</span>
+                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Ans d'expertise en protection sociale</span>
                     </div>
                     <div class="border-l-4 border-secondary pl-6">
                         <span class="block text-4xl font-headline font-black text-white mb-2"><span class="counter" data-target="60" data-suffix="+">60+</span></span>
-                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Compagnies Partenaires</span>
+                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Assureurs mis en concurrence</span>
                     </div>
                     <div class="border-l-4 border-secondary pl-6">
                         <span class="block text-4xl font-headline font-black text-white mb-2"><span class="counter" data-target="100" data-suffix="%">100%</span></span>
-                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Indépendant</span>
+                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Indépendant, sans lien avec un assureur</span>
                     </div>
                     <div class="border-l-4 border-secondary pl-6">
-                        <span class="v-stat">1</span>
-                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Interlocuteur Dédié</span>
+                        <span class="v-stat">360°</span>
+                        <span class="text-slate-400 font-bold uppercase tracking-widest text-sm">Audit social &amp; patrimonial</span>
                     </div>
                 </div>
                 {'<a href="/le-cabinet.html" class="v-more" style="font-size:.9rem">Découvrir le cabinet <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>' if CONFIG["page_cabinet"] else ''}
