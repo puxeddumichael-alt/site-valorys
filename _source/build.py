@@ -411,7 +411,7 @@ def index():
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#C0392B] to-red-400">les meilleures solutions.</span>
             </h1>
             <p class="hero-subtitle text-slate-300 text-base md:text-lg max-w-lg font-medium leading-relaxed mb-10">
-                Nous accompagnons particuliers, professionnels et entreprises avec une approche indépendante : protection sociale, épargne, retraite et assurance de prêt.
+                Nous accompagnons particuliers, professionnels et entreprises avec une approche indépendante : protection sociale, épargne, retraite et gestion de patrimoine.
             </p>
             <div class="hero-cta flex flex-col sm:flex-row items-start gap-6">
                 <a href="#contact" class="bg-secondary text-white px-8 py-4 font-body font-semibold text-base rounded-[40px] hover:brightness-110 hover:scale-[1.02] transition-all duration-200">Demander une étude gratuite</a>
