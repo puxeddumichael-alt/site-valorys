@@ -430,7 +430,7 @@ def index():
                 <div class="h-1.5 w-24 bg-secondary"></div>
             </div>
             <p class="font-body text-on-surface-variant max-w-md text-lg">
-                Parce que chaque situation est unique, nous concevons des solutions sur mesure, comparées et optimisées auprès de plus de 60 partenaires assureurs.
+                Parce que chaque situation est unique, nous concevons des solutions sur mesure, comparées et optimisées auprès de plus de 60 partenaires.
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6 v-bento">
