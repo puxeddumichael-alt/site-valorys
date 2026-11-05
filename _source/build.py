@@ -103,6 +103,18 @@ def head(title, desc, path, ld=None, noindex=False, preload_hero=False):
 """
 
 NAV_SVC = [(q["path"], q["name"]) for q in PAGES] + [("assurance-emprunteur.html", "Assurance emprunteur")]
+# Menu « Notre expertise » : mêmes titres et mêmes contrats que les cartes de l'accueil
+NAV_CARTES = {
+    "protection-entreprise.html": ("Préserver votre entreprise", "RC Pro · Multirisque · Décennale · Protection juridique"),
+    "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
+    "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Mutuelle santé"),
+    "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER"),
+    "bilan-retraite.html": ("Sécuriser votre retraite, développer votre patrimoine", "Bilan retraite · Audit patrimonial"),
+    "assurance-emprunteur.html": ("Assurer votre prêt immobilier", "Assurance emprunteur · Loi Lemoine"),
+}
+def nav_item(path, extra=""):
+    t, c = NAV_CARTES[path]
+    return f'<a{extra} href="/{path}"><span class="v-nav-t">{t}</span><span class="v-nav-c">{c}</span></a>'
 
 def nav(home=True):
     p = "" if home else "/"
@@ -123,7 +135,7 @@ def nav(home=True):
 {link(acc, "Accueil")}
             <div class="v-dd">
 {link(p + "#solutions", "Notre expertise")}
-                <div class="v-dd-panel" role="menu">{"".join(f'<a role="menuitem" href="/{x[0]}">{x[1]}</a>' for x in NAV_SVC)}</div>
+                <div class="v-dd-panel" role="menu">{"".join(nav_item(x[0], ' role="menuitem"') for x in NAV_SVC)}</div>
             </div>
 {link("/le-cabinet.html", "Le cabinet") if CONFIG["page_cabinet"] else link(p + "#about", "Qui sommes-nous")}
 {link(p + "#pourquoi", "Pourquoi nous")}
@@ -141,7 +153,7 @@ def nav(home=True):
         <div class="flex flex-col gap-5 pt-6 pb-4 border-t border-white/10 mt-4">
             {mob(acc, "Accueil")}
             {mob(p + "#solutions", "Notre expertise")}
-            <div class="v-mob-sub">{"".join(f'<a href="/{x[0]}" onclick="closeMenu()">{x[1]}</a>' for x in NAV_SVC)}</div>
+            <div class="v-mob-sub">{"".join(nav_item(x[0], ' onclick="closeMenu()"') for x in NAV_SVC)}</div>
             {mob("/le-cabinet.html", "Le cabinet") if CONFIG["page_cabinet"] else mob(p + "#about", "Qui sommes-nous")}
             {mob(p + "#pourquoi", "Pourquoi nous")}
             <a href="{p}#contact" onclick="closeMenu()" class="bg-secondary text-white px-6 py-3 font-body font-bold rounded-[40px] hover:scale-95 transition-all duration-200 w-full mt-2 text-center">

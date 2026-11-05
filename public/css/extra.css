@@ -241,3 +241,9 @@ a.v-card-link:hover .v-ico-dark .material-symbols-outlined,.v-trust-wide:hover .
 /* Petit libellé « contrats » au-dessus du titre des cartes de l'accueil */
 .v-card-tag{display:block;font-family:Lexend,sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--v-red);margin-bottom:.6rem}
 .v-card-tag-dark{color:#f08a7e}
+
+/* Menu « Notre expertise » : titre de la carte + contrats en dessous */
+.v-dd-panel{min-width:22rem}
+.v-dd-panel a,.v-mob-sub a{display:flex;flex-direction:column;gap:.15rem;white-space:normal}
+.v-nav-t{line-height:1.3}
+.v-nav-c{font-family:Lexend,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#f08a7e;line-height:1.4}
