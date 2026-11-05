@@ -109,7 +109,7 @@ NAV_CARTES = {
     "epargne-entreprise.html": ("Fidéliser vos salariés", "PEE · PEI · PERECO · IFC"),
     "prevoyance-sante.html": ("Protéger votre famille", "Prévoyance · Mutuelle santé"),
     "epargne-retraite.html": ("Valoriser votre épargne", "Assurance vie · PER"),
-    "bilan-retraite.html": ("Sécuriser votre retraite, développer votre patrimoine", "Bilan retraite · Audit patrimonial"),
+    "bilan-retraite.html": ("Sécuriser votre avenir", "Bilan retraite · Audit patrimonial"),
     "assurance-emprunteur.html": ("Assurer votre prêt immobilier", "Assurance emprunteur · Loi Lemoine"),
 }
 def nav_item(path, extra=""):
@@ -488,7 +488,7 @@ def index():
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
                     <span class="v-card-tag">Bilan retraite · Audit patrimonial</span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Sécuriser votre retraite, développer votre patrimoine</h3>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Sécuriser votre avenir</h3>
                     <p class="text-on-surface-variant">Savoir combien vous toucherez et quand partir, repérer les manques de votre protection et bâtir une stratégie patrimoniale cohérente avec vos objectifs.</p>
                     {more()}
                 </div>
