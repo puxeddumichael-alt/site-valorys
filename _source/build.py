@@ -428,8 +428,9 @@ def index():
                 <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
-                    <h3 class="font-headline font-extrabold text-4xl text-white mb-4">Protéger votre Entreprise</h3>
-                    <p class="text-slate-300 max-w-md font-medium">Responsabilité Civile Professionnelle, Multirisque, Décennale et Protection du dirigeant : des solutions sur mesure pour sécuriser les professions libérales, artisans, commerçants et entreprises de la région toulousaine.</p>
+                    <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale</span>
+                    <h3 class="font-headline font-extrabold text-4xl text-white mb-4">Pérenniser votre entreprise</h3>
+                    <p class="text-slate-300 max-w-md font-medium">Responsabilité Civile Professionnelle, Multirisque, Décennale et Protection du dirigeant : des solutions sur mesure pour sécuriser les professions libérales, artisans, commerçants et entreprises.</p>
                     {more()}
                 </div>
             </a>
@@ -438,7 +439,8 @@ def index():
                 <div class="p-10 flex flex-col h-full justify-between">
                     <div>
                         <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">group</span></span>
-                        <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne Salariale</h3>
+                        <span class="v-card-tag">PEE · PEI · PERECO · IFC</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Fidéliser vos salariés</h3>
                         <p class="text-on-surface-variant">PEE, PEI, PERECO, intéressement et participation, PER d'entreprise et IFC : des dispositifs pour partager la valeur, fidéliser vos collaborateurs et anticiper vos engagements.</p>
                         {more()}
                     </div>
@@ -449,7 +451,8 @@ def index():
             <a href="{URL['prevoyance-sante.html']}" class="v-card-link md:col-span-4 group relative overflow-hidden bg-primary rounded-xl reveal stagger-3">
                 <div class="p-10 relative z-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span></span>
-                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Prévoyance &amp; Santé</h3>
+                    <span class="v-card-tag v-card-tag-dark">Prévoyance · Mutuelle santé</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Protéger votre famille</h3>
                     <p class="text-slate-400">Des solutions sur mesure en mutuelle et prévoyance individuelle et collective pour vous protéger, vous et vos proches, à chaque étape de votre vie.</p>
                     {more()}
                 </div>
@@ -461,7 +464,8 @@ def index():
             <a href="{URL['epargne-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">savings</span></span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Épargne &amp; Retraite</h3>
+                    <span class="v-card-tag">Assurance vie · PER</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Valoriser votre épargne</h3>
                     <p class="text-on-surface-variant">Assurance vie et PER : développer votre capital, maîtriser votre fiscalité et préparer votre retraite sereinement.</p>
                     {more()}
                 </div>
@@ -471,7 +475,8 @@ def index():
             <a href="{URL['bilan-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; audit patrimonial</h3>
+                    <span class="v-card-tag">Bilan retraite · Audit patrimonial</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Sécuriser votre retraite, développer votre patrimoine</h3>
                     <p class="text-on-surface-variant">Analyse complète de votre situation, projection de vos revenus futurs et repérage des manques de protection.</p>
                     {more()}
                 </div>
@@ -482,7 +487,8 @@ def index():
                 <div class="v-emp-inner relative z-10">
                     <div class="v-emp-text">
                         <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">real_estate_agent</span></span>
-                        <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Assurance emprunteur</h3>
+                        <span class="v-card-tag v-card-tag-dark">Assurance emprunteur · Loi Lemoine</span>
+                    <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Assurer votre prêt immobilier</h3>
                         <p class="text-slate-300">Nouveau crédit ou prêt en cours : depuis la loi Lemoine, vous pouvez changer d'assurance de prêt à tout moment, sans frais. Nous comparons les contrats à garanties équivalentes et gérons toutes les démarches avec votre banque.</p>
                         {more()}
                     </div>

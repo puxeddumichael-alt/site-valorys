@@ -193,7 +193,7 @@ PAGES = [{'path': 'prevoyance-sante.html',
   'name': "Épargne salariale",
   'title': "Épargne salariale, PER d'entreprise et IFC à Toulouse | Cabinet Valorys",
   'desc': "PEE, PEI, PERECO, intéressement et participation, PER d'entreprise et externalisation des "
-          'indemnités de fin de carrière (IFC) pour les TPE et PME de la région toulousaine.',
+          'indemnités de fin de carrière (IFC) pour les TPE et PME.',
   'h1': "Épargne salariale, retraite d'entreprise et fin de carrière",
   'lead': 'Fidéliser vos salariés, préparer la retraite du dirigeant, anticiper le coût des départs à la '
           "retraite : des dispositifs d'entreprise existent, encore faut-il les dimensionner correctement.",
@@ -427,7 +427,7 @@ _EXPERT = {
   'profils_title': 'Toutes les entreprises, de la TPE à la PME',
   'profils_lead': "Quelques salariés ou une équipe structurée : chaque entreprise bénéficie du même chiffrage "
                   "et d'un suivi d'une année sur l'autre.",
-  'profil_wide': ('apartment', 'TPE et PME de la région',
+  'profil_wide': ('apartment', 'TPE et PME',
                   "Anticiper les indemnités de départ, mettre en place l'épargne salariale et offrir un "
                   "complément de retraite à vos salariés : c'est le quotidien de notre activité. Nous chiffrons, nous mettons en place "
                   "et nous suivons les contrats avec vous et votre expert-comptable."),
