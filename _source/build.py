@@ -528,7 +528,7 @@ def index():
             </div>
             <div class="reveal-right">
                 <h2 class="font-headline font-black text-3xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight tracking-tighter">
-                    Une expertise de proximité.<br>
+                    Un conseil humain.<br>
                     <span class="text-secondary">Une vision globale.</span>
                 </h2>
                 <p class="text-slate-300 text-xl font-medium mb-12 leading-relaxed">
