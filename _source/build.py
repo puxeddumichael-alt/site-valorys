@@ -473,6 +473,25 @@ def index():
                     </a>
                 </div>
             </div>
+
+            <a href="/assurance-emprunteur.html" class="v-card-link v-emp-card group relative overflow-hidden bg-primary rounded-xl border-l-8 border-secondary reveal">
+                <div class="v-emp-inner relative z-10">
+                    <div class="v-emp-text">
+                        <span class="material-symbols-outlined text-secondary text-4xl mb-6" aria-hidden="true">real_estate_agent</span>
+                        <h3 class="font-headline font-extrabold text-2xl text-white mb-4 uppercase">Assurance emprunteur</h3>
+                        <p class="text-slate-300">Nouveau crédit ou prêt en cours : depuis la loi Lemoine, vous pouvez changer d'assurance de prêt à tout moment, sans frais. Nous comparons les contrats à garanties équivalentes et gérons toutes les démarches avec votre banque.</p>
+                        {more()}
+                    </div>
+                    <ul class="v-emp-points">
+                        <li><strong>À tout moment</strong><span>résiliation sans frais ni préavis</span></li>
+                        <li><strong>Même taux</strong><span>votre crédit reste inchangé</span></li>
+                        <li><strong>0 € pour vous</strong><span>étude et démarches offertes</span></li>
+                    </ul>
+                </div>
+                <div class="absolute -bottom-10 -right-10 opacity-10 scale-100 md:scale-150 text-white" aria-hidden="true">
+                    <span class="material-symbols-outlined text-[100px] md:text-[200px]">key</span>
+                </div>
+            </a>
         </div>
     </div>
 </section>
