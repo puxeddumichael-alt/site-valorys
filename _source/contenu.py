@@ -190,11 +190,11 @@ PAGES = [{'path': 'prevoyance-sante.html',
   'aside_text': 'Nous reconstituons votre carrière et chiffrons vos futurs revenus avant de parler '
                 'placement.'},
  {'path': 'epargne-entreprise.html',
-  'name': "Retraite d'entreprise & IFC",
-  'title': "PER d'entreprise et indemnités de fin de carrière à Toulouse | Cabinet Valorys",
-  'desc': "Mise en place de PER d'entreprise et externalisation des indemnités de fin de carrière (IFC) pour "
-          'les PME de la région toulousaine.',
-  'h1': "Retraite d'entreprise et indemnités de fin de carrière",
+  'name': "Épargne salariale",
+  'title': "Épargne salariale, PER d'entreprise et IFC à Toulouse | Cabinet Valorys",
+  'desc': "PEE, PEI, PERECO, intéressement et participation, PER d'entreprise et externalisation des "
+          'indemnités de fin de carrière (IFC) pour les TPE et PME de la région toulousaine.',
+  'h1': "Épargne salariale, retraite d'entreprise et fin de carrière",
   'lead': 'Fidéliser vos salariés, préparer la retraite du dirigeant, anticiper le coût des départs à la '
           "retraite : des dispositifs d'entreprise existent, encore faut-il les dimensionner correctement.",
   'prose': '<h2>Indemnités de fin de carrière (IFC)</h2>\n'
@@ -238,7 +238,7 @@ PAGES = [{'path': 'prevoyance-sante.html',
            ('Le dirigeant peut-il en bénéficier ?',
             "Oui, selon son statut social. C'est un point que nous étudions au cas par cas lors du "
             'rendez-vous.')],
-  'besoin': 'Indemnités de fin de carrière (IFC)',
+  'besoin': 'Épargne salariale (PEE, PEI, PERECO)',
   'aside_title': 'Chiffrer vos engagements',
   'aside_text': 'Envoyez-nous la liste anonymisée de vos salariés (âge, ancienneté, salaire) : nous estimons '
                 'vos futures IFC.'},
@@ -401,9 +401,9 @@ _EXPERT = {
   'aside_text': "Nous reconstituons votre carrière et chiffrons vos futurs revenus avant de parler "
                 "placement : la recommandation vient après le diagnostic."},
  'epargne-entreprise.html': {
-  'lead': "Fidéliser vos salariés, préparer la retraite du dirigeant, anticiper le coût des départs à la "
-          "retraite : ces dispositifs sont efficaces, à condition d'être chiffrés et dimensionnés "
-          "correctement. C'est notre travail.",
+  'lead': "Partager la valeur avec vos salariés, les fidéliser, préparer la retraite du dirigeant et "
+          "anticiper le coût des départs à la retraite : ces dispositifs sont efficaces, à condition d'être "
+          "chiffrés et dimensionnés correctement. C'est notre travail.",
   'checks_title': 'Un engagement social<br><span class="text-secondary">se chiffre et se pilote.</span>',
   'checks_lead': "Les indemnités de fin de carrière sont un passif que beaucoup d'entreprises découvrent au "
                  "moment du départ. Nous le mesurons, nous le provisionnons et nous le suivons dans le "

@@ -155,7 +155,7 @@ def nav(home=True):
 OPTIONS = [
     ("Protection de l'entreprise", ["Responsabilité Civile Professionnelle", "Multirisque Professionnelle", "RC Décennale", "Protection du dirigeant"]),
     ("Protection des personnes", ["Prévoyance individuelle", "Santé individuelle", "Prévoyance & santé collective"]),
-    ("Retraite d'entreprise & engagements sociaux", ["IFC (Indemnités de Fin de Carrière)", "PER d'entreprise", "Épargne salariale (orientation)"]),
+    ("Épargne salariale & engagements sociaux", ["Épargne salariale (PEE, PEI, PERECO)", "Intéressement & participation", "PER d'entreprise", "IFC (Indemnités de Fin de Carrière)"]),
     ("Épargne & retraite", ["Assurance vie", "Plan d'épargne retraite (PER)"]),
     ("Bilan & conseil", ["Bilan retraite & audit patrimonial"]),
     ("Financement", ["Assurance emprunteur", "Changer mon assurance de prêt en cours"]),
