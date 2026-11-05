@@ -216,3 +216,17 @@ footer .text-slate-400{color:#a7b2c4}
 .v-card-mark .material-symbols-outlined{font-size:150px}
 @media (min-width:768px){.v-card-mark .material-symbols-outlined{font-size:170px}}
 .v-card-light:hover .v-card-mark{opacity:.1;transform:scale(1.05)}
+
+/* Cartes « Tous les dossiers » : même relief que les cartes de l'accueil */
+.v-trust .v-tcard{position:relative;overflow:hidden;background:linear-gradient(160deg,#fff 0%,#fff 55%,#f1f2f7 100%);transition:box-shadow .3s,transform .3s}
+.v-trust .v-tcard:hover{box-shadow:0 24px 50px -16px rgba(4,21,52,.3);transform:translateY(-3px)}
+.v-trust .v-tcard>*:not(.v-card-mark){position:relative;z-index:1}
+.v-trust .v-tcard .v-card-ico .material-symbols-outlined{color:var(--v-red);font-size:1.9rem;margin-bottom:0}
+.v-trust .v-tcard:hover .v-card-ico{background:var(--v-red)}
+.v-trust .v-tcard:hover .v-card-ico .material-symbols-outlined{color:#fff}
+.v-trust .v-card-mark,.v-trust .v-trust-wide>.v-card-mark{position:absolute;right:-2rem;bottom:-2.5rem;padding:0;background:none;border:0;box-shadow:none;border-radius:0;min-width:0;opacity:.06}
+.v-trust .v-card-mark .material-symbols-outlined{font-size:150px;color:var(--v-primary);margin:0}
+.v-trust .v-tcard:hover .v-card-mark{opacity:.1;transform:scale(1.05)}
+.v-trust .v-trust-wide{position:relative;overflow:hidden}
+.v-trust .v-trust-wide>.v-card-mark{opacity:.1}
+.v-trust .v-trust-wide>.v-card-mark .material-symbols-outlined{color:#fff;font-size:170px}
