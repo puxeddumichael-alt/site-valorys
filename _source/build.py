@@ -489,7 +489,7 @@ def index():
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
                     <span class="v-card-tag">Bilan retraite · Audit patrimonial</span>
                     <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Sécuriser votre avenir</h3>
-                    <p class="text-on-surface-variant">Savoir combien vous toucherez et quand partir, repérer les manques de votre protection et bâtir une stratégie patrimoniale cohérente avec vos objectifs.</p>
+                    <p class="text-on-surface-variant">Anticiper votre retraite, préparer vos futurs revenus et développer votre patrimoine, à partir d'un bilan complet et d'une stratégie sur mesure.</p>
                     {more()}
                 </div>
                 <div class="v-card-mark" aria-hidden="true"><span class="material-symbols-outlined">account_balance</span></div>
