@@ -428,7 +428,7 @@ def index():
                 <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-10">
                     <span class="v-card-ico v-ico-dark"><span class="material-symbols-outlined" aria-hidden="true">domain</span></span>
-                    <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale</span>
+                    <span class="v-card-tag v-card-tag-dark">RC Pro · Multirisque · Décennale · Protection juridique</span>
                     <h3 class="font-headline font-extrabold text-4xl text-white mb-4">Préserver votre entreprise</h3>
                     <p class="text-slate-300 max-w-md font-medium">Un sinistre, un litige client ou votre absence ne doivent pas mettre votre activité en péril. Nous adaptons chaque garantie à votre métier : professions libérales, artisans, commerçants et entreprises.</p>
                     {more()}
