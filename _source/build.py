@@ -471,7 +471,7 @@ def index():
             <a href="{URL['bilan-retraite.html']}" class="v-card-link v-card-light md:col-span-4 group relative overflow-hidden bg-white rounded-xl reveal stagger-4">
                 <div class="p-10">
                     <span class="v-card-ico"><span class="material-symbols-outlined" aria-hidden="true">account_balance</span></span>
-                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; patrimonial</h3>
+                    <h3 class="font-headline font-extrabold text-2xl text-primary mb-4 uppercase">Bilan retraite &amp; audit patrimonial</h3>
                     <p class="text-on-surface-variant">Analyse complète de votre situation, projection de vos revenus futurs et repérage des manques de protection.</p>
                     {more()}
                 </div>
