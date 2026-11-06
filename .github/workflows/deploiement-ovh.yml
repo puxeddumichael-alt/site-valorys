@@ -1,0 +1,36 @@
+# Publie le site sur l'hébergement OVH à chaque mise à jour de la branche main.
+# GitHub dépose lui-même les fichiers par SFTP (même accès que FileZilla), sans passer par le webhook OVH.
+# Le mot de passe SFTP est stocké dans les secrets du dépôt (OVH_SFTP_PASSWORD) : il n'apparaît jamais dans le code.
+name: Déploiement OVH
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Une seule publication à la fois : les suivantes attendent leur tour.
+concurrency:
+  group: deploiement-ovh
+  cancel-in-progress: false
+
+jobs:
+  deploiement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le site
+        uses: actions/checkout@v4
+
+      - name: Installer lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Envoyer les fichiers sur OVH (SFTP)
+        env:
+          LFTP_PASSWORD: ${{ secrets.OVH_SFTP_PASSWORD }}
+        run: |
+          lftp -c "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            set net:timeout 30;
+            open --env-password -u cabingw sftp://ftp.cluster127.hosting.ovh.net;
+            mirror --reverse --verbose --exclude-glob .git/ --exclude-glob .github/ ./ site-git/
+          "

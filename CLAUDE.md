@@ -2,7 +2,7 @@
 
 Ce dépôt est la **seule source** du site www.cabinet-valorys.com. Il est publié automatiquement sur l'hébergement OVH (cluster127, compte `cabingw`) à chaque modification poussée sur la branche `main`.
 
-Déploiement : Multisite OVH « Test nouveau site » → dossier racine `site-git`, associé à ce dépôt (HTTPS, branche `main`) ; webhook GitHub → OVH actif depuis le 2 novembre 2026. Le dépôt est public : n'y mettre aucun mot de passe ni donnée client.
+Déploiement : à chaque push sur `main`, l'action GitHub `.github/workflows/deploiement-ovh.yml` dépose les fichiers par SFTP dans `site-git` (dossier racine du Multisite OVH « Test nouveau site »). Mot de passe SFTP dans le secret GitHub `OVH_SFTP_PASSWORD`. Le webhook GitHub → OVH (intégration Git d'OVH) renvoyait des erreurs 401 aléatoires : il est désactivé ; le bouton « Déployer » d'OVH reste utilisable en secours. Le dépôt est public : n'y mettre aucun mot de passe ni donnée client.
 
 ## Règles impératives
 1. **Ne jamais modifier les fichiers directement sur le serveur** (FileZilla, éditeur OVH). Toute modification passe par ce dépôt, sinon elle sera écrasée au prochain déploiement.
@@ -11,7 +11,7 @@ Déploiement : Multisite OVH « Test nouveau site » → dossier racine `site-gi
 4. Décrire chaque changement dans le message de commit, en français, en une phrase.
 5. **Montrer chaque modification à Michaël (captures ordinateur et téléphone) et attendre sa validation avant de la mettre en ligne.** Proposer une seule version recommandée, déjà vérifiée (cohérence, répétitions, longueur), plutôt qu'une liste d'options.
 6. **Penser à tout ce qu'un changement touche.** Les titres et les contrats des six rubriques sont définis une seule fois dans `NAV_CARTES` (`_source/build.py`) : cartes de l'accueil, menu « Notre expertise » et pied de page en dépendent. Pour toute autre modification de nom ou de texte, vérifier aussi les pages services, le formulaire de contact et les titres Google.
-7. **Regrouper les retouches en une seule mise en ligne**, et ne jamais pousser deux fois sur `main` à moins de quelques minutes d'intervalle : le webhook OVH refuse alors les envois (erreur 401). Si une mise à jour n'apparaît pas, Michaël clique sur « Déployer » dans OVH (Multisite) ou sur « Redeliver » dans GitHub.
+7. **Regrouper les retouches en une seule mise en ligne.** Vérifier la publication dans l'onglet **Actions** du dépôt (« Déploiement OVH », coche verte). En cas d'échec, relancer avec « Re-run jobs » ou « Run workflow ».
 
 ## Choix déjà validés par Michaël (ne pas revenir dessus sans qu'il le demande)
 - Accueil : bandeau « Courtier en assurance & gestion de patrimoine à Toulouse » ; titre « Une expertise locale. Une vision globale. » (positionnement national malgré tout) ; titres de cartes en MAJUSCULES, orientés client, avec les contrats en petit au-dessus.
