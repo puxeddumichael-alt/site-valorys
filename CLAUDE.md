@@ -14,7 +14,7 @@ Déploiement : Multisite OVH « Test nouveau site » → dossier racine `site-gi
 7. **Regrouper les retouches en une seule mise en ligne**, et ne jamais pousser deux fois sur `main` à moins de quelques minutes d'intervalle : le webhook OVH refuse alors les envois (erreur 401). Si une mise à jour n'apparaît pas, Michaël clique sur « Déployer » dans OVH (Multisite) ou sur « Redeliver » dans GitHub.
 
 ## Choix déjà validés par Michaël (ne pas revenir dessus sans qu'il le demande)
-- Accueil : bandeau « Courtier en assurance & gestion de patrimoine à Toulouse » ; titre « Une expertise locale. Une vision globale. » (positionnement national malgré tout) ; titres de cartes en minuscules, orientés client, avec les contrats en petit au-dessus.
+- Accueil : bandeau « Courtier en assurance & gestion de patrimoine à Toulouse » ; titre « Une expertise locale. Une vision globale. » (positionnement national malgré tout) ; titres de cartes en MAJUSCULES, orientés client, avec les contrats en petit au-dessus.
 - Pas de ligne de réassurance (ORIAS · 60+ compagnies · ligne directe) sous les boutons du hero, ni sur l'accueil ni sur la page assurance emprunteur.
 - Pas de « 500+ clients » ni « 98 % de satisfaction » ; pas de faux membres d'équipe ni de fausses photos.
 - Page « Le cabinet » désactivée (`page_cabinet: False`) jusqu'à un vrai recrutement.
